@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akemi Tokoyoda Portfolio</title>
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New&display=swap"
+      rel="stylesheet"
+    />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- slick -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  </head>
+
+  <body>
+    <!-- loading -->
+
+    <!-- //loading -->
+
+    <main>
+      <!-- header 固定(left) -->
+      <header id="header">
+        <ul class="header__nav">
+          <li><a href="#works">Works</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- hum メニュー -->
+        <div class="sp__menu__btn"><span></span></div>
+        <nav class="sp__header__nav">
+          <ul class="sp__nav__list">
+            <li class="flash-btn"><a href="#works">Works</a></li>
+            <li class="flash-btn"><a href="#about">About</a></li>
+            <li class="flash-btn"><a href="#skills">Skills</a></li>
+            <li class="flash-btn"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="content">
+        <!-- section スクロール部分(right) -->
+        <div class="home__wrap">
+          <!-- mv -->
+          <div class="home__mv">
+            <div class="mv__img">
+              <picture>
+                <source
+                  srcset="./img/portofolio_mv_sp@2x-100.jpg"
+                  media="(max-width: 550px)"
+                />
+                <source
+                  srcset="./img/portfolio_mv_tab1-100.jpg"
+                  media="(max-width: 1000px)"
+                />
+                <img
+                  src="./img/portfolio_mv-100.jpg"
+                  alt="とこよだあけみのポートフォリオ"
+                />
+              </picture>
+              <h1 class="title">
+                <div class="title-text-group">
+                  <p class="title__sub">はじまりは、</p>
+                  <p class="title__sub"><span>友だちの</span>お手伝い。</p>
+                </div>
+                <div class="title-text-group">
+                  <p class="title__main" id="a">Akemi Tokoyoda</p>
+                  <p class="title__main hidden" id="b">Portfolio</p>
+                </div>
+                <!-- sp用title -->
+                <div class="sp-title-text-group">
+                  <p class="sp-title__sub">はじまりは、</p>
+                  <p class="sp-title__sub">友だちの</p>
+                  <p class="sp-title__sub">お手伝い。</p>
+                </div>
+                <div class="sp-title-text-group">
+                  <p class="sp-title__main" id="sp-a">Akemi Tokoyoda</p>
+                  <p class="sp-title__main hidden" id="sp-b">Portfolio</p>
+                </div>
+              </h1>
+
+              <!-- mv スクロール -->
+              <div class="scroll-area">
+                <img
+                  src="./img/mv_person@2x-8.png"
+                  alt="下に向かって歩く人"
+                  class="mv__scroll-img"
+                />
+                <div class="scroll-bar">
+                  <div class="scroll-img-container">
+                    <img
+                      src="./img/footmark@2x-8.png"
+                      alt="スクロール"
+                      class="scroll-img"
+                    />
+                  </div>
+                  <p>scroll</p>
+                </div>
+              </div>
+
+              <!-- 動く人 イラスト -->
+              <div class="person-yellow">
+                <img src="./img/person-yellow@2x-8.png" alt="歩く人" />
+              </div>
+              <div class="person-green">
+                <img src="./img/person-green@2x-8.png" alt="ジャンプする人" />
+              </div>
+              <div class="person-gray">
+                <img src="./img/person-gray@2x-8.png" alt="挨拶する人" />
+              </div>
+              <div class="person-beige">
+                <img
+                  src="./img/person-beige@2x-8.png"
+                  alt="待ち合わせに来た人"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- //mv -->
+
+          <!-- works -->
+          <section class="home__works container">
+            <div class="section__ttl" id="works">
+              <h2 class="section__ttl-ja">デザインしてます。</h2>
+              <p
+                class="section__ttl-en section__tti-works"
+                id="worksTitle"
+                data-text="WORKS LIST"
+              >
+                WORKS LIST
+              </p>
+            </div>
+            <div class="home__works__gallery works-slider">
+              <!-- works -->
+              <div class="gallery__group">
+                <div class="gallery-item">
+                  <a href="../works/works1.html">
+                    <img
+                    src="./img/home_works1@2x-100.jpg"
+                    alt="飲食店  新商品ハンバーガーのバナー"
+                    class="gallery-img"
+                  />
+                    <!-- <div class="hover-container">
+                      <div class="hover-text">MORE</div>
+                    </div> -->
+                    <p class="works__gallery-ttl">飲食店 バナー</p>
+                    <p class="works__gallery-text">
+                      Design / Photoshop / illustrator<br />
+                    </p>
+                  </a>
+                </div>
+
+                <div class="gallery-item">
+                  <a href="./works/works1.html">
+                    <img
+                      src="./img/home_works2@2x-100.jpg"
+                      alt="飲食店  新商品ハンバーガーのバナー"
+                      class="gallery-img"
+                    />
+                    <!-- <div class="hover-container">
+                      <div class="hover-text">MORE</div>
+                    </div> -->
+                    <p class="works__gallery-ttl">飲食店 バナー</p>
+                    <p class="works__gallery-text">
+                      Design / Photoshop / illustrator<br />
+                    </p>
+                  </a>
+                </div>
+
+                <div class="gallery-item">
+                  <a href="./works/works2.html">
+                    <img
+                      src="./img/home_works3@2x-100.jpg"
+                      alt="美容室  ランディングページ"
+                      class="gallery-img"
+                    />
+                    <!-- <div class="hover-container">
+                      <div class="hover-text">MORE</div>
+                    </div> -->
+                    <p class="works__gallery-ttl">美容室 ランディングページ</p>
+                    <p class="works__gallery-text">
+                      Design / Photoshop / illustrator<br />
+                    </p>
+                  </a>
+                </div>
+
+                <div class="gallery-item">
+                  <a href="./works/works3.html">
+                    <img
+                      src="./img/home_works4_1@2x-100.jpg"
+                      alt="カフェ ホームページ"
+                      class="gallery-img"
+                    />
+                    <!-- <div class="hover-container">
+                      <div class="hover-text">MORE</div>
+                    </div> -->
+                    <p class="works__gallery-ttl">カフェホームページ</p>
+                    <p class="works__gallery-text">
+                      HTML / CSS / jQuery<span>レスポンシブ</span>
+                    </p>
+                  </a>
+                </div>
+
+                <div class="gallery-item">
+                  <a href="./works/works4.html">
+                    <img
+                      src="./img/home_works5@2x-100.jpg"
+                      alt="携帯会社 料金プランのバナー"
+                      class="gallery-img"
+                    />
+                    <!-- <div class="hover-container">
+                      <div class="hover-text">MORE</div>
+                    </div> -->
+                    <p class="works__gallery-ttl">携帯会社バナー</p>
+                    <p class="works__gallery-text">
+                      Photoshop / illustrator<br />
+                    </p>
+                  </a>
+                </div>
+
+                <div class="gallery-item">
+                  <a href="./works/works5.html">
+                    <img
+                      src="./img/home_works6@2x-100.jpg"
+                      alt="アウトドア系  メディアコンテンツのバナー"
+                      class="gallery-img"
+                    />
+                    <!-- <div class="hover-container">
+                      <div class="hover-text">MORE</div>
+                    </div> -->
+                    <p class="works__gallery-ttl">メディアコンテンツバナー</p>
+                    <p class="works__gallery-text">
+                      Photoshop / illustrator<br />
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <!-- //works gallery 2 -->
+              </div>
+
+            <div class="about-btn-area">
+              <div class="about-btn btn">
+                <a href="./works-gallery.html">
+                  <div class="about-btn-inner">
+                    <p class="about-btn-text">VIEW ALL</p>
+                    <div class="about-btn-arrow">
+                      <span></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="person-yellow2">
+              <img src="./img/person-yellow@2x-8.png" alt="" />
+            </div>
+          </section>
+          <!-- //works -->
+          <!-- about -->
+          <section class="home__about" id="about">
+            <!-- section-ttl  共通クラス -->
+            <div class="section__ttl">
+              <h2 class="section__ttl-ja">はじめまして。</h2>
+              <p
+                class="section__ttl-en section__ttl-about"
+                id="aboutTltle"
+                data-text="ABOUT ME"
+              >
+                ABOUT ME
+              </p>
+            </div>
+            <!-- //section-ttl  共通クラス -->
+            <!-- profile -->
+            <div class="home__profile__wrap">
+              <p class="profile-text">
+                <span>とこよだ あけみ</span>
+                <span>神奈川県在住で、千葉県の端っこで生まれ。</span>
+                <br />
+                <span
+                  >スポーツ系専門学校のマリンスポーツ科を卒業して、
+                  小学生から30歳頃までスポーツ一筋の生活を送ってきました。</span
+                >
+                <br />
+
+                <span
+                  >友人から何気なく言われた『ホームページ作ってみてほしい』の一言をきっかけにWebデザインの世界に飛び込みました。</span
+                >
+                <br />
+                <!-- <span>仕事の転機とコロナ禍が重なり、さまざまな経験をする中</span>
+                <span>WEBデザイン・ホームページ制作などの勉強を始め、現在にいたっています。</span>
+                <br /> -->
+                <span
+                  >あなたのアイデアや想いを形にするお手伝いができればと思っています。
+                </span>
+              </p>
+              <img
+                src="./img/profile-img@2x-8.png"
+                alt="プロフィールイラスト"
+                class="profile-img"
+              />
+            </div>
+            <!-- sp profileイラスト・文章 -->
+            <div class="sp__profile__wrap">
+              <img
+                src="./img/profile-img@2x-8.png"
+                alt="プロフィールイラスト"
+                class="sp__profile-img"
+              />
+              <p class="sp__profile-text">
+                <span>とこよだ あけみ</span>
+                <span>神奈川県在住。千葉県の端っこ生まれ。</span>
+                <span
+                  >都内にあるスポーツ系専門学校でマリンスポーツ科を卒業。</span
+                >
+                <br />
+                <span
+                  >小学生から30歳ころまで、スポーツばかりの生活をしていました。</span
+                >
+                <span
+                  >仕事が変わるタイミングとコロナが重なり、紆余曲折色々な経験をする中</span
+                >
+                <span
+                  >友人から『ホームページを作ってみてほしい』と言われたことをきっかけに</span
+                >
+                <span>WEBデザイン・制作を始めました。</span>
+              </p>
+            </div>
+            <!-- profile btn -->
+            <div class="about-btn-area">
+              <div class="about-btn btn">
+                <a href="./about.html">
+                  <div class="about-btn-inner">
+                    <p class="about-btn-text">MORE</p>
+                    <div class="about-btn-arrow">
+                      <span></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+          <!-- //about -->
+          <!-- skills -->
+          <section class="home__skills">
+            <!-- section-ttl  共通クラス -->
+            <div class="section__ttl" id="skills">
+              <h2 class="section__ttl-ja">こんなお手伝いできます。</h2>
+              <p
+                class="section__ttl-en section__ttl-skill"
+                id="skillsTitle"
+                data-text="SKILLS"
+              >
+                SKILLS
+              </p>
+            </div>
+            <!-- //section-ttl -->
+            <!-- skill list -->
+            <div class="skills__group">
+              <!-- skill list 1 -->
+              <ul class="skill__group--item1">
+                <li>
+                  <div class="skills__ttl-wrapper">
+                    <img
+                      src="./img/skills_item1@2x-100.jpg"
+                      alt="デザインができます。"
+                      class="skill-img"
+                    />
+                    <p class="skills-title">Design</p>
+                  </div>
+                  <p class="skills-text">
+                    デザインの基礎を習得しております。
+                    目的やご希望に合わせたデザインを考え、ワイヤーフレーム・デザインカンプを一から作成することが可能です。
+                  </p>
+                </li>
+                <li>
+                  <div class="skills__ttl-wrapper">
+                    <img
+                      src="./img/skills_item2@2x-100.jpg"
+                      alt="フォトショップが使えます。"
+                      class="skill-img"
+                    />
+                    <p class="skills-title">Photoshop</p>
+                  </div>
+                  <p class="skills-text">
+                    photoshopを駆使して写真の色補正や、複数枚の画像を組み合わせた合成加工まで行います。また人物や小物などの切り抜き作業が可能です。
+                  </p>
+                </li>
+                <li>
+                  <div class="skills__ttl-wrapper">
+                    <img
+                      src="./img/skills_item3@2x-100.jpg"
+                      alt="イラストレーターが使えます。"
+                      class="skill-img"
+                    />
+                    <p class="skills-title">illustrator</p>
+                  </div>
+                  <p class="skills-text">
+                    illustratorでバナー広告制作を行います。また、文字を加工しデフォルトに無い文字や、装飾を作成する作業が可能です。
+                  </p>
+                </li>
+              </ul>
+              <!-- //skill list 1 -->
+              <!-- skill list 2 -->
+              <ul class="skill__group--item2">
+                <li>
+                  <div class="skills__html-wrapper">
+                    <img
+                      src="./img/skills_item4@2x-100.jpg"
+                      alt="HTMLとCSSができます。"
+                      class="skill-img"
+                    />
+                    <p class="skills-title">HTML / CSS</p>
+                  </div>
+                  <p class="skills-text">
+                    Webサイトを一から構築するための、HTML・CSSコーディングが可能です。メインで使用しているエディタはVisual
+                    Studio Codeです。
+                  </p>
+                </li>
+                <li>
+                  <div class="skills__jquery-wrapper">
+                    <img
+                      src="./img/skills_item5@2x-100.jpg"
+                      alt="ホームページに動きがつけられます。"
+                    />
+                  </div>
+                  <p class="skills-text">
+                    スライダー・ハンバーガーメニュー・モーダルウィンドウなど、webサイトに簡単な動きをつけるための、jQueryカスタマイズが可能です。
+                  </p>
+                </li>
+                <li>
+                  <div class="skills__ttl-wrapper">
+                    <img
+                      src="./img/skills_item6@2x-100.jpg"
+                      alt="携帯などの端末に対応したホームページの制作ができます。"
+                      class="skill-img"
+                    />
+                    <p class="skills-title">レスポンシブ</p>
+                  </div>
+                  <p class="skills-text">
+                    パソコン、タブレット、携帯など各デバイスの画面サイズに応じて、デザインの作成をすることや、コーディングが可能です。
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!-- //skills -->
+          <!-- contact -->
+          <section class="contact">
+            <!-- section-ttl  共通クラス -->
+            <div class="section__ttl" id="contact">
+              <h2 class="section__ttl-ja">お気軽にご相談ください。</h2>
+              <p
+                class="section__ttl-en section__ttl-contact"
+                id="contactTitle"
+                data-text="CONTACT"
+              >
+                CONTACT
+              </p>
+            </div>
+            <!-- //section-ttl -->
+            <!-- contact form -->
+            <div class="contact__wrapper">
+              <p class="contact-form__text">
+                <span
+                  >業務に関するご相談・お問い合わせ、当サイトに対するメッセージは
+                  お問い合わせフォームより承ります。</span
+                >
+
+                <span>3日以内にお返事させていただきます。</span>
+              </p>
+              <div class="contact-btn-area">
+                <div class="contact-form-btn button">
+                  <a href="./contact.html">
+                    <p class="contact-btn-ja">お問い合わせフォーム</p>
+                    <p class="contact-btn-en">Contact</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- //contact -->
+        </div>
+      </div>
+    </main>
+    <!-- //スクロールエリア終了  -->
+
+    <!-- footer -->
+    <!-- footer top illust -->
+    <footer class="footer">
+      <div class="person-red">
+        <div class="person-red">
+          <img class="person-red-img" src="./img/person-red@2x-8.png" alt="" />
+          <img class="person-redpair-img" src="./img/person-redpair@2x-8.png" alt="" />
+        </div>
+      </div>
+
+      <!-- footer sitemap＆sns -->
+      <div class="footer__wrapper">
+        <!-- sitemap  footer-ttl部分のみ共通クラス-->
+        <!-- footer left -->
+        <div class="footer-img-left">
+          <img src="./img/footer-left@2x-100.jpg" alt="足あとイラスト" />
+        </div>
+        <!-- //footer left -->
+
+        <div class="sitemap__area">
+          <div class="footer-ttl-text">
+            <p class="footer-ttl-map">SITE MAP</p>
+          </div>
+          <div class="sitemap__nav">
+            <ul class="sitemap-item">
+              <a href="#works">
+                <li>
+                  <p class="sitemap-item-en">WORKS</p>
+                  <p class="sitemap-item-ja">デザインしてます。</p>
+                </li>
+              </a>
+            </ul>
+
+            <ul class="sitemap-item">
+              <a href="#about">
+                <li>
+                  <p class="sitemap-item-en">ABOUT</p>
+                  <p class="sitemap-item-ja">はじめまして。</p>
+                </li>
+              </a>
+            </ul>
+
+            <ul class="sitemap-item">
+              <a href="#skills">
+                <li>
+                  <p class="sitemap-item-en">SKILLS</p>
+                  <p class="sitemap-item-ja">こんなお手伝いできます。</p>
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+        <!-- //sitemap -->
+        <!-- sns -->
+        <div class="sns__area">
+          <div class="footer-ttl-text">
+            <p class="footer-ttl-sns">SOCIAL</p>
+          </div>
+          <div class="sns-icon">
+            <a
+              href="https://www.instagram.com/tao_ffffff/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./img/top-sns-insta@2x-8.png"
+                alt="インスタグラム アカウント"
+            /></a>
+          </div>
+          <div class="sns-icon">
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <img src="./img/top-sns-x@2x-8.png" alt="エックス  アカウント" />
+            </a>
+          </div>
+          <!-- sp sns -->
+          <div class="sp-sns-icon">
+            <a
+              href="https://www.instagram.com/tao_ffffff/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./img/footer_sns_insta@2x-100.jpg"
+                alt="インスタグラム アカウント"
+            /></a>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <img
+                src="./img/footer_sns_x@2x-100.jpg"
+                alt="エックス  アカウント"
+              />
+            </a>
+          </div>
+        </div>
+        <!-- //sns -->
+        <!-- footer right -->
+        <div class="footer-img-right">
+          <div class="top-btn">
+            <a href="#top" id="back-to-top-btn">
+              <div class="top-btn-arrow"><span></span></div>
+              <img src="./img/footer_right_1@2x-8.png" alt="足あとマーク" />
+              <p class="top-btn-text">BACK<span> TO</span> <span>TOP</span></p>
+            </a>
+          </div>
+        </div>
+        <!-- //footer right -->
+      </div>
+      <p class="copyright">© 2024 Akemi Tokoyoda portfolio site</p>
+    </footer>
+
+    <script>
+      //scroll 上から徐々に表れる
+      document.addEventListener("DOMContentLoaded", function () {
+        const scrollImg = document.querySelector(".scroll-img");
+
+        function triggerAnimation() {
+          scrollImg.style.top = "0"; // 画像を完全に表示
+          setTimeout(() => {
+            scrollImg.style.top = "-150%"; // 画像を隠す位置に戻す
+          }, 2000); // 画像が表示される時間を2秒と設定
+        }
+
+        setInterval(triggerAnimation, 5000); // 5秒に1回アニメーションをトリガー
+      });
+
+      // ham 【btn動き】
+      $(function () {
+        $(".sp__menu__btn").on("click", function () {
+          $(".sp__menu__btn").toggleClass("open");
+          $(".sp__header__nav").fadeToggle();
+        });
+
+        //hum click後閉じる
+        $(".sp__nav__list li").on("click", function () {
+          //header nav list liをclickしたら
+          $(".sp__menu__btn").removeClass("open");
+          //sp menu btn のopenクラスを消す。
+          $(".sp__header__nav").fadeOut();
+          //header nav フェードアウトしてもらう
+        });
+      });
+
+      // header-nav  【footerのところで消える】
+      var startPos = 0;
+      var winScrollTop = 0;
+      const Header = $("#header"); //id headerをHeaderへ入れる
+      const Footer = $(".footer__wrapper"); //.footer__wrapperをFooterへ入れる
+
+      $(window).on("scroll", function () {
+        winScrollTop = $(this).scrollTop();
+        /*$(this)→今見ているページ全体  scrollTop()→ページ上からどれくらい下スクロールしたか
+       $(this)+scrollTop() ページの一番上からどのくらいスクロールしたか WinScrollTopに入れる*/
+        var footerTop = Footer.offset().top;
+        //offset() → 指定した要素の位置を返す。 topからfooterがどのくらい下にあるか返してくれる
+
+        if (winScrollTop >= startPos) {
+          /*今の位置(どのくらい下スクロールしたか) >= 前回のスクロール位置
+          winScrollTop(今の位置)がstartPos(前回の位置)よりも以上の場合『今、下にスクロールしている』になる*/
+          if (winScrollTop >= footerTop - $(window).height()) {
+            /*$(window).height() ブラウザの高さを表す
+            今の位置 >= footerの位置 - ウィンドウの高さを引いた位置
+            footerの上がウィンドウの下に達する位置*/
+            $(Header).addClass("is-hide");
+            /*今の位置が、Footer(.footer__wrapper)より大きく(下の位置)になってたら
+            Headerにis-hide(class)を追加。
+            cssで#header.is-hideで少し上に移動＆透明になるようにしてある。
+            cssにtransformを指定する理由：少し上に移動すると自然に隠れるように見える。*/
+          } else {
+            $(Header).removeClass("is-hide");
+          }
+          // 今の位置が、Footerより上に上がったらis-hideをremove。
+        } else {
+          $(Header).removeClass("is-hide");
+          //Footerに到達していない状態でスクロール上下した場合にheader-nav消えないように
+        }
+        startPos = winScrollTop;
+      });
+
+      //MV 【title タイピング】
+      $(function () {
+        setTimeout(startTypewriterEffect, 30);
+        /*
+        setTimeout・・・ある動作を後で行うように予約する為の命令
+        startTypewriterEffect↓がページを読み込まれてから
+        ↑3.1秒後に開始する
+        */
+
+        function startTypewriterEffect() {
+          if (window.matchMedia("(max-width: 550px)").matches) {
+            // SP  ウィンドウの幅が550px以下の場合
+            animateText("sp-a", function () {
+              $("#sp-b").removeClass("hidden");
+              // sp-bのhiddenを消去
+              animateText("sp-b");
+            });
+          } else {
+            // Desktop view
+            animateText("a", function () {
+              $("#b").removeClass("hidden");
+              animateText("b");
+            });
+          }
+        }
+
+        function animateText(id, callback) {
+          var element = $("#" + id);
+          var text = element.data("full-text") || element.text(); // Get the full text from data attribute if available
+          var index = 0;
+
+          element.data("full-text", text); // Save the full text in a data attribute
+          element.text(""); // Clear the text for the animation
+
+          function showNextLetter() {
+            if (index < text.length) {
+              element.text(text.substr(0, index + 1));
+              index++;
+              setTimeout(showNextLetter, 100); // 100 milliseconds for delay between letters
+            } else {
+              element.text(text); // Ensure the full text is displayed after the animation
+              if (typeof callback === "function") callback();
+            }
+          }
+
+          showNextLetter();
+        }
+      });
+
+      //共通ttl 【タイピング】
+      $(function () {
+        $(window).scroll(function () {
+          $(".section__ttl-en").each(function () {
+            if ($(this).hasClass("visible")) return;
+            var topOfElement = $(this).offset().top;
+            var bottomOfElement = $(this).offset().top + $(this).outerHeight();
+            var bottomOfScreen = $(window).scrollTop() + $(window).height();
+            var topOfScreen = $(window).scrollTop();
+
+            if (
+              bottomOfScreen > topOfElement &&
+              topOfScreen < bottomOfElement
+            ) {
+              $(this).addClass("visible");
+              startTypewriterEffect($(this));
+            }
+          });
+        });
+
+        function startTypewriterEffect(element) {
+          var text = element.data("text"); // オリジナルのテキストをdata属性から取得
+          element.text(""); // 要素を空にする
+          element.css("border-right", "2px solid #000"); // タイピング中の点滅バー
+          var index = 0;
+
+          function showNextLetter() {
+            if (index < text.length) {
+              element.append(text.charAt(index)); // 一文字ずつ追加
+              index++;
+              setTimeout(showNextLetter, 100); // タイピング速度を調整
+            } else {
+              // タイピング終了後に点滅アニメーションを継続
+              element.css("border-right", "1px solid #333"); // 点滅バーを保持
+              element.css("animation", "blink 0.5s step-end infinite"); // 点滅アニメーションを適用
+            }
+          }
+
+          showNextLetter(); // タイピング効果の開始
+        }
+      });
+
+      // header-nav 【hoverしたもの以外、薄く表示】
+      $(document).ready(function () {
+        //$(document).ready →ウェブページの準備ができたら何かをする合図
+        $(".header__nav li").hover(
+          function () {
+            //header__nav liにhoverをしたら
+            $(this).siblings().css("opacity", "0.2");
+            /* this→現在の要素。 siblings→hその要素の兄弟要素。
+            現在の要素の兄弟要素(全て)のopacityを0.3に設定する */
+          },
+          function () {
+            $(".header__nav li").css(
+              "opacity",
+              "1"
+            ); /* hoverが外れたときに全てのli要素のopacityを元に戻します */
+          }
+        );
+      });
+
+      //skill  【テキストの動き】
+      $(function () {
+        $(window).on("scroll", function () {
+          $(".skill__group--item1 li, .skill__group--item2 li").each(function (
+            index
+          ) {
+            var targetPosition = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > targetPosition - windowHeight + 160) {
+              var $skillsText = $(this).find(".skills-text");
+              setTimeout(function () {
+                $skillsText.addClass("show");
+              }, index * 160); // 300ミリ秒の遅延を追加
+            }
+          });
+        });
+      });
+
+      // footer 3秒かけて戻る
+      document.addEventListener("DOMContentLoaded", function () {
+        const backToTopBtn = document.getElementById("back-to-top-btn");
+        backToTopBtn.addEventListener("click", function (e) {
+          e.preventDefault();
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+      });
+
+   // works slider
+$(function () {
+  $(".works-slider .gallery__group").slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    infinite: true,
+    dots: false,
+    centerMode: false, // 中央揃え
+    centerPadding: "20%", // 左右のパディング（次のスライドが少し見えるようにする）
+    variableWidth: false,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          infinite: true,
+          dots: false,
+          centerMode: false, // 中央揃え
+          centerPadding: "20%", // 左右のパディング（次のスライドが少し見えるようにする）
+          variableWidth: false,
+        },
+      },
+      {
+        breakpoint: 676,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          infinite: true,
+          dots: false,
+          centerMode: true, // 中央揃え
+          centerPadding: "0%", // 左右のパディング
+          variableWidth: false,
+        },
+      },
+    ],
+  });
+});
+
+
+
+    </script>
+  </body>
+</html>
