@@ -19,7 +19,7 @@ main {
   min-width: 650px;
   object-fit: fill;
   box-sizing: border-box; /* ボックスサイズをコンテンツボックスからボーダーボックスに変更 */
-  padding: 0 10px; /* 左右の余白を追加 */
+  padding: 0 0 0 10px; /* 左右の余白を追加 */
 }
 
 @media screen and (max-width: 767px) {
