@@ -1795,6 +1795,7 @@ main {
   transform: translateY(0);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   letter-spacing: 0px;
+  padding: 10px;
 }
 
 .skills-text.moving {
