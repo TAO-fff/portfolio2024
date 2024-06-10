@@ -291,7 +291,7 @@ main {
   .home__skills,
   .contact {
     padding: 80px 20px;
-    margin: 0 auto;
+    margin: 70px auto;
     box-sizing: border-box;
   }
 
@@ -307,6 +307,7 @@ main {
     font-weight: 400;
     padding-left: 25px;
     margin-bottom: 30px;
+    width: 100%;
   }
   
   .section__ttl-works {
@@ -1444,6 +1445,7 @@ main {
   
   
     /* sp works */
+    /* 1000-767px */
     @media screen and (min-width: 767px) and (max-width: 1000px) {
       .gallery__group {
         gap: 5vw;
@@ -1476,7 +1478,8 @@ main {
     }
     }
 
-    @media screen and (max-width: 767px) {
+    /* 767-520px以下 */
+    @media screen and (min-width: 520px) and (max-width: 767px) {
       .home__works {
         padding-top: 48vw;
       }
@@ -1568,6 +1571,94 @@ main {
         display: none;
       }
     }
+
+    @media screen and (max-width: 520px) {
+      .gallery__group {
+        display: block;
+        padding-top: 0;
+        width: 90%;
+      }
+
+      .gallery__group li {
+        height: 350px;
+        padding-top: 75px;
+      }
+
+      .gallery-item {
+        position: static;
+        width: 100%;
+        max-width: 767px;
+      }
+
+      .gallery-img {
+        width: 100%;
+      }
+
+      .gallery-item img:hover {
+        transform: scale(0.95, 0.95);
+        transition: ease-in-out 0.3s;
+      }
+
+      .gallery-item:hover .gallery-img {
+        opacity: 1;
+        filter: blur(0);
+      }
+
+      .hover-container {
+        display: none;
+      }
+
+      .gallery-item:hover .hover-container {
+        opacity: 1;
+      }
+
+      .hover-text {
+        display: none;
+      }
+
+      .home__works__gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 767px;
+        height: 300px;
+        margin: 0 auto;
+      }
+
+      .works__gallery-ttl {
+        font-size: 16px;
+        padding-top: 20px;
+        font-weight: bold;
+      }
+
+      .works__gallery-text {
+        font-size: 14px;
+        padding-top: 10px;
+        height: 50px;
+      }
+
+      .works__gallery-text span {
+        display: block;
+        padding-top: 5px;
+      }
+
+      
+    .works-slider .slick-track {
+      display: flex;
+      align-items: flex-start;
+      padding: 20px 0 300px 0;
+}
+
+      .person-yellow2 {
+        display: none;
+        }
+  
+      .person-yellow2 img {
+        display: none;
+      }
+    }
+
 /*** works ***/
 /* about */
 .home__about {
@@ -2774,7 +2865,7 @@ main {
 }
 
 /* 767-380px */
-@media screen and (min-width: 380px) and (max-width: 767px) {
+@media screen and (min-width: 360px) and (max-width: 767px) {
 
 .person-redpair-img {
   width: 30px;
@@ -2967,16 +3058,14 @@ main {
 }
 
 /* site-map jaのみ  画面幅が360px以下の場合のスタイル */
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 360px) {
   
 .person-redpair-img {
-  width: 20px;
-  transform: rotateY(180deg);
+  display: none;
 }
 
 .person-red-img {
-  width: 20px;
-  transform: rotateY(180deg);
+ display: none;
 }
 
 
