@@ -1927,7 +1927,7 @@ main {
 }
 
 .skill__group--item2 {
-  padding-top: 9vw;
+  padding-top: 11vw;
 }
 
 /* html・jQueryのみ 分けて指定(skills 一番下に記載) */
@@ -1980,6 +1980,7 @@ main {
   justify-content: center;
   gap: 1.5vw;
   align-items: center;
+  padding-bottom: 20px;
 }
 
 .skills__html-wrapper img {
@@ -1997,6 +1998,7 @@ main {
 
 .skills__jquery-wrapper img {
   width: 14.3vw;
+  padding-bottom: 20px;
 }
 
 /* sp skills (home)*/
