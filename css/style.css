@@ -1926,6 +1926,13 @@ main {
   gap: 5vw;
 }
 
+.skill__group--item1 li,
+.skill__group--item2 li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .skill__group--item2 {
   padding-top: 11vw;
 }
@@ -1984,16 +1991,15 @@ main {
 }
 
 .skills__html-wrapper img {
-  width: 6vw;
+  width: 4.5vw;
 }
 
 /* jQuery */
 .skills__jquery-wrapper {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   gap: 1.2vw;
   align-items: center;
-  padding-left: 1.8vw;
 }
 
 .skills__jquery-wrapper img {
@@ -2002,6 +2008,7 @@ main {
 }
 
 /* sp skills (home)*/
+/* 1000-767px */
 @media screen and (min-width: 767px) and (max-width: 1000px) {
   .skills__ttl-wrapper {
     width: 23vw;
@@ -2012,7 +2019,7 @@ main {
   }
 }
 
-
+/* 767px以下 */
 @media screen and (max-width: 767px) {
   .skills__group {
     padding-top: 50px;
@@ -2098,12 +2105,14 @@ main {
     align-items: center;
     margin: 0 auto;
     border: 0.5px solid #333;
+    display: flex;
+    align-items: center;  
   }
 
   .skills__jquery-wrapper img {
     width: 160px;
     margin: 0 auto;
-    padding-right: 20px;
+    padding-bottom: 0;
   }
 }
 /*** skills ***/
