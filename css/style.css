@@ -2838,7 +2838,7 @@ main {
 .sitemap-item-ja {
   width: 60%;
   min-width: 190px;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 3vw;
   padding-left: 10px;
@@ -4306,6 +4306,10 @@ textarea.contact__form__input {
   width: 80%;
 }
 
+.button {
+  height: 100%;
+}
+
 .contact__form__submit button {
   font-family: Zen Kaku Gothic New;
   font-size: 1.3vw;
@@ -4319,10 +4323,11 @@ textarea.contact__form__input {
   cursor: pointer;
 }
 
-.contact__form__submit:hover {
+.contact__form__submit button:hover {
   opacity: 0.6;
   background-color: transparent;
-}
+  color: #333;
+} 
 
 /* sp about(フォーム部分) */
 @media screen and (max-width: 767px) {
@@ -4385,10 +4390,6 @@ textarea.contact__form__input {
     width: 210px;
     height: 50px;
     border-radius: 5px;
-  }
-
-  .contact__form__submit:hover {
-    opacity: 0.4;
   }
 }
 
