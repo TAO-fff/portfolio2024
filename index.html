@@ -150,9 +150,6 @@
                     alt="飲食店  新商品ハンバーガーのバナー"
                     class="gallery-img"
                   />
-                    <!-- <div class="hover-container">
-                      <div class="hover-text">MORE</div>
-                    </div> -->
                     <p class="works__gallery-ttl">飲食店 バナー</p>
                     <p class="works__gallery-text">
                       Design / Photoshop / illustrator<br />
@@ -167,9 +164,6 @@
                       alt="飲食店  新商品ハンバーガーのバナー"
                       class="gallery-img"
                     />
-                    <!-- <div class="hover-container">
-                      <div class="hover-text">MORE</div>
-                    </div> -->
                     <p class="works__gallery-ttl">飲食店 バナー</p>
                     <p class="works__gallery-text">
                       Design / Photoshop / illustrator<br />
@@ -184,9 +178,6 @@
                       alt="美容室  ランディングページ"
                       class="gallery-img"
                     />
-                    <!-- <div class="hover-container">
-                      <div class="hover-text">MORE</div>
-                    </div> -->
                     <p class="works__gallery-ttl">美容室 ランディングページ</p>
                     <p class="works__gallery-text">
                       Design / Photoshop / illustrator<br />
@@ -201,9 +192,6 @@
                       alt="カフェ ホームページ"
                       class="gallery-img"
                     />
-                    <!-- <div class="hover-container">
-                      <div class="hover-text">MORE</div>
-                    </div> -->
                     <p class="works__gallery-ttl">カフェホームページ</p>
                     <p class="works__gallery-text">
                       HTML / CSS / jQuery<span>レスポンシブ</span>
@@ -218,9 +206,6 @@
                       alt="携帯会社 料金プランのバナー"
                       class="gallery-img"
                     />
-                    <!-- <div class="hover-container">
-                      <div class="hover-text">MORE</div>
-                    </div> -->
                     <p class="works__gallery-ttl">携帯会社バナー</p>
                     <p class="works__gallery-text">
                       Photoshop / illustrator<br />
@@ -235,9 +220,6 @@
                       alt="アウトドア系  メディアコンテンツのバナー"
                       class="gallery-img"
                     />
-                    <!-- <div class="hover-container">
-                      <div class="hover-text">MORE</div>
-                    </div> -->
                     <p class="works__gallery-ttl">メディアコンテンツバナー</p>
                     <p class="works__gallery-text">
                       Photoshop / illustrator<br />
@@ -336,7 +318,7 @@
               <div class="about-btn btn">
                 <a href="./about.html">
                   <div class="about-btn-inner">
-                    <p class="about-btn-text"> READ MORE</p>
+                    <p class="about-btn-text"> Read more</p>
                     <div class="about-btn-arrow">
                       <span></span>
                     </div>
@@ -856,6 +838,23 @@ $(function () {
   });
 });
 
+// top-btn
+document.addEventListener("DOMContentLoaded", function() {
+  const topBtn = document.querySelector('.top-btn');
+  topBtn.style.display = 'none';  // 初期状態では非表示
+
+  window.addEventListener('scroll', function() {
+    if (window.innerWidth <= 1000) {
+      if (window.scrollY > 200) {
+        topBtn.style.display = 'flex';  // スクロールが200pxを超えたら表示
+      } else {
+        topBtn.style.display = 'none';  // スクロールが200px未満なら非表示
+      }
+    } else {
+      topBtn.style.display = 'none';  // 画面幅が1000pxを超えている場合は非表示
+    }
+  });
+});
 
 
     </script>
