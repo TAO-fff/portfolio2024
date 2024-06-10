@@ -1846,6 +1846,7 @@ main {
   justify-content: center;
   gap: 1.5vw;
   align-items: center;
+  padding-bottom: 20px;
 }
 
 .skill-img {
