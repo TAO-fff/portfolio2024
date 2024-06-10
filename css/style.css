@@ -2817,34 +2817,34 @@ main {
     transform: translateX(38px) rotateY(180deg) rotate(-3deg);
   }
   50% {
-    transform: translateX(43px) rotateY(180deg) rotate(3deg);
+    transform: translateX(43px) rotateY(0deg) rotate(3deg);
   }
   55% {
-    transform: translateX(48px) rotateY(180deg) rotate(-3deg);
+    transform: translateX(48px) rotateY(0deg) rotate(-3deg);
   }
   60% {
-    transform: translateX(53px) rotateY(180deg) rotate(3deg);
+    transform: translateX(43px) rotateY(0deg) rotate(3deg);
   }
   65% {
-    transform: translateX(58px) rotateY(180deg) rotate(-3deg);
+    transform: translateX(38px) rotateY(0deg) rotate(-3deg);
   }
   70% {
-    transform: translateX(63px) rotateY(180deg) rotate(3deg);
+    transform: translateX(33px) rotateY(0deg) rotate(3deg);
   }
   75% {
-    transform: translateX(68px) rotateY(180deg) rotate(-3deg);
+    transform: translateX(28px) rotateY(0deg) rotate(-3deg);
   }
   80% {
-    transform: translateX(73px) rotateY(180deg) rotate(3deg);
+    transform: translateX(23px) rotateY(0deg) rotate(3deg);
   }
   85% {
-    transform: translateX(78px) rotateY(180deg) rotate(-3deg);
+    transform: translateX(18px) rotateY(0deg) rotate(-3deg);
   }
   90% {
-    transform: translateX(83px) rotateY(180deg) rotate(3deg);
+    transform: translateX(13px) rotateY(0deg) rotate(3deg);
   }
   95% {
-    transform: translateX(88px) rotateY(180deg) rotate(-3deg);
+    transform: translateX(8px) rotateY(0deg) rotate(-3deg);
   }
 }
 
