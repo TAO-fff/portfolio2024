@@ -314,18 +314,18 @@
               </p>
             </div>
             <!-- profile btn -->
+            <a href="./about.html">
             <div class="about-btn-area">
               <div class="about-btn btn">
-                <a href="./about.html">
                   <div class="about-btn-inner">
-                    <p class="about-btn-text"> Read more</p>
+                    <p class="about-btn-text"> READ MORE</p>
                     <div class="about-btn-arrow">
                       <span></span>
                     </div>
                   </div>
-                </a>
+                </div>
               </div>
-            </div>
+            </a>
           </section>
           <!-- //about -->
           <!-- skills -->
@@ -395,7 +395,6 @@
                     <img
                       src="./img/skills_item4@2x-100.jpg"
                       alt="HTMLとCSSができます。"
-                      class="skill-img"
                     />
                     <p class="skills-title">HTML / CSS</p>
                   </div>
@@ -838,7 +837,7 @@ $(function () {
   });
 });
 
-// top-btn
+// top-btn 1000px以下の時、200pxスクロールしたら出てくる
 document.addEventListener("DOMContentLoaded", function() {
   const topBtn = document.querySelector('.top-btn');
   topBtn.style.display = 'none';  // 初期状態では非表示
