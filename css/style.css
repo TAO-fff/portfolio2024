@@ -1740,6 +1740,7 @@ main {
   position: relative;
 }
 
+
 .about-btn-inner {
   display: flex;
   align-items: center;
@@ -1835,7 +1836,6 @@ main {
     display: block;
     width: 100%;
     max-width: 480px;
-    height: 185px;
     font-size: 16px;
     line-height: 1.75;
     margin: 0 auto;
@@ -2161,6 +2161,7 @@ main {
 
 .contact-form-btn a:hover {
   background-color: rgb(157, 196, 183, 0.5);
+  transition: .2s;
 }
 
 .contact-btn-ja {
@@ -2728,10 +2729,12 @@ main {
   gap: 1.8vw;
   padding: 10px;
   border-radius: 50%;
+
 }
 
 .sns-icon:hover {
   background-color: #9dc4b78b;
+  transition: .4s;
 }
 
 .sns-icon img {
@@ -3321,6 +3324,7 @@ main {
 }
 
 /* sp footer right・left */
+/* 1000-767px */
 @media screen and (min-width: 767px) and (max-width: 1000px){
   
   .footer-img-right {
@@ -3338,7 +3342,7 @@ main {
     width: 35px;
     height: 50px;
     position: fixed;
-    backdrop-filter: blur(5px);
+    backdrop-filter: contrast(4) blur(5px);
     background-color: #9dc4b72a;
     border: .5px solid #9dc4b72a;
   }
@@ -3373,7 +3377,7 @@ main {
     background: #333;
     position: absolute;
     top: 10px;
-    right: 50%;
+    right: 51%;
     transform: rotate(135deg);
     border-radius: 5vw;
   }
@@ -3406,6 +3410,7 @@ main {
   }
 }
 
+/* 767px以下 */
 @media screen and (max-width: 767px) {
   .footer-img-left {
     display: none;
@@ -3424,13 +3429,13 @@ main {
   }
 
   .top-btn {
-    right: 20px;
-    bottom: 20px;
+    right: 0px;
+    bottom: 0px;
     padding: 15px;
-    width: 35px;
+    width: 100vw;
     height: 50px;
     position: fixed;
-    backdrop-filter: blur(5px);
+    backdrop-filter: contrast(8) blur(5px);
     background-color: #9dc4b72a;
     border: .5px solid #9dc4b72a;
   }
@@ -3465,7 +3470,7 @@ main {
     background: #333;
     position: absolute;
     top: 10px;
-    right: 50%;
+    right: 51%;
     transform: rotate(135deg);
     border-radius: 5vw;
   }
@@ -3478,7 +3483,7 @@ main {
     background: #333;
     position: absolute;
     top: 10px;
-    left: 7%;
+    left: 8%;
     transform: rotate(45deg);
     border-radius: 5vw;
   }
@@ -3486,6 +3491,7 @@ main {
   .top-btn img {
     width: 13px;
     padding-bottom: 5px;
+    margin: 0 auto;
   }
 
   .top-btn-text {
@@ -3494,7 +3500,7 @@ main {
 
   .copyright {
     font-size: 10px;
-    padding: 20px 0;
+    margin-top: -70px;
   }
 }
 
