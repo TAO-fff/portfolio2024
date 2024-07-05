@@ -264,9 +264,9 @@ main {
 
   .btn::before {
     content: "";
-    width: 170px;
-    height: 45px;
-    top: 3px;
+    width: 280px;
+    height: 80px;
+    top: 5px;
     left: 4px;
   }
 
@@ -1636,6 +1636,7 @@ main {
 
   .works-slider .slick-slide {
     transform: scale(1.2);
+    padding-top: 40px;
   }
 
   .home__works__gallery {
@@ -1890,7 +1891,7 @@ main {
   }
 
   .about-btn-text {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     margin: 0 auto;
   }
@@ -1920,8 +1921,8 @@ main {
   }
 
   .about-btn {
-    width: 170px;
-    height: 45px;
+    width: 280px;
+    height: 80px;
     text-align: center;
     margin-top: 0;
   }
