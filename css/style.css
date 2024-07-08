@@ -1,7 +1,7 @@
 html,
 body {
   height: 100%;
-  font-family: "Montserrat", "senobi-gothic",  "Zen Kaku Gothic New", sans-serif;
+  font-family: "Montserrat", "senobi-gothic", "Zen Kaku Gothic New", sans-serif;
   color: #4c4c4c;
   margin: 0;
   box-sizing: border-box;
@@ -84,11 +84,11 @@ main {
   font-family: senobi-gothic;
   font-size: 2.6vw;
   font-weight: 400;
-  padding:25px 0px 0px 0px;
+  padding: 25px 0px 0px 0px;
   white-space: nowrap;
   letter-spacing: -5px;
   color: #333;
-  background-position: left bottom; 
+  background-position: left bottom;
   text-align: center;
 }
 
@@ -160,13 +160,20 @@ main {
 /* about・contactページ 一番上のタイトル */
 .about__section--ttl,
 .contact__section--ttl {
-  font-family: Zen Kaku Gothic New;
+  font-family: senobi-gothic;
   font-size: 4.4vw;
   font-weight: bolder;
   text-align: left;
   margin: 0 auto;
   padding-top: 9vw;
   line-height: 1.75;
+  letter-spacing: -5.3px;
+  background-image: url(../img/prof-back-05.png);
+  background-repeat: no-repeat;
+  background-size: 9vh;
+  background-position: 0px 80px;
+  background-color: rgb(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
 }
 
 /* sp 共通クラス */
@@ -281,8 +288,8 @@ main {
   /* about・contactページ 一番上のタイトル */
   .about__section--ttl,
   .contact__section--ttl {
-    font-size: 24px;
-    padding-top: 90px;
+    font-size: 33px;
+    padding: 90px 30px 0 30px;
   }
 }
 
@@ -426,7 +433,6 @@ main {
     border: 10px solid #9dc4b7;
     border-radius: 0 0 100% 0;
     z-index: 9998;
-    
   }
 
   .sp__nav__list {
@@ -466,7 +472,6 @@ main {
     display: block;
     content: "";
     padding-left: 0px;
-    
   }
 
   .sp__menu__btn span {
@@ -516,15 +521,14 @@ main {
     top: 25px;
     width: 28px;
     background-color: #333;
-
   }
 
   .sp__menu__btn.open {
     background-color: #fff;
     border-top: 10px solid #9dc4b7;
-   border-left: 10px solid #9dc4b7;
-   border-radius: 0%;
-   background-image: none;
+    border-left: 10px solid #9dc4b7;
+    border-radius: 0%;
+    background-image: none;
   }
 }
 /*** header ***/
@@ -885,24 +889,24 @@ main {
     left: 58%;
   }
 
-   .person-gray {
+  .person-gray {
     display: none;
-   }
+  }
 
-   .person-beige {
+  .person-beige {
     width: 6.2%;
     position: absolute;
     top: 0%;
     left: 15%;
-   }
+  }
 
   .title__sub {
     font-size: 22px;
   }
 
-  .title__main  {
+  .title__main {
     font-size: 35px;
-    line-height: .6;
+    line-height: 0.6;
   }
 
   /* scroll */
@@ -1009,16 +1013,16 @@ main {
     left: 56.5%;
   }
 
-   .person-gray {
+  .person-gray {
     display: none;
-   }
+  }
 
-   .person-beige {
+  .person-beige {
     width: 8.5%;
     position: absolute;
     top: 0%;
     left: 15%;
-   }
+  }
 
   /* scroll */
   .scroll-area {
@@ -1141,13 +1145,12 @@ main {
     position: absolute;
     top: -3%;
     left: 29%;
-}
+  }
 
-   .person-gray,
+  .person-gray,
   .person-gray img {
     display: none;
   }
-
 
   /* scroll */
   .scroll-area {
@@ -1155,7 +1158,7 @@ main {
     position: absolute;
     top: 98%;
     left: 18%;
-}
+  }
 
   /* スクロールbar */
   .scroll-bar {
@@ -1190,7 +1193,6 @@ main {
 }
 
 /* 350px以下 */
-
 
 /*** header ***/
 
@@ -1288,7 +1290,7 @@ main {
 .works-slider .slick-slide {
   box-sizing: border-box;
   width: 100% !important;
-  transform: scale(.75);
+  transform: scale(0.75);
   transition: all 0.3s;
 }
 
@@ -1603,7 +1605,7 @@ main {
   }
 
   .works-slider .slick-slide {
-    transform: scale(.9);
+    transform: scale(0.9);
     padding-top: 40px;
   }
 
@@ -2319,7 +2321,6 @@ main {
     padding-bottom: 0;
   }
 
-
   /* skill botom */
   .skills-bottom-illust {
     width: 27%; /* 画像エリアの幅 */
@@ -2403,7 +2404,6 @@ main {
     max-width: 1000px;
     gap: 30px;
   }
-
 
   .contact-form__text {
     width: 45%;
@@ -3780,7 +3780,7 @@ main {
 /* 真ん中  スライド */
 .works__slider .slick-center img {
   opacity: 1;
-  transform: scale(.9);
+  transform: scale(0.9);
 }
 
 .works__slider .slick-center img:hover {
@@ -3882,7 +3882,7 @@ main {
   /* 真ん中  スライド */
   .works__slider .slick-center img {
     opacity: 1;
-    transform: scale(1  );
+    transform: scale(1);
   }
 
   .works__slider .slick-center img:hover {
@@ -4380,7 +4380,6 @@ main {
   justify-content: space-evenly;
   align-items: center;
 }
-
 
 .sns__icon__img {
   width: 1.75vw;
@@ -5419,19 +5418,10 @@ textarea.contact__form__input {
   }
 }
 
-
 /* about */
 /* topタイトル（about・contact共通 共通クラス管理） */
 .sp-top-ttl {
   display: none;
-}
-
-.aboutprof__wrap {
-  padding-left: 80px;
-  background-image: url(../img/prof-back-05.png);
-  background-repeat: no-repeat;
-  background-size: 20%;
-  background-position-y: 50px;
 }
 
 .about__section--ttl span {
@@ -5440,66 +5430,74 @@ textarea.contact__form__input {
 
 .aboutprof__img {
   width: 31.5vw;
-  position: absolute;
-  top: 260px;
-  right: 2vw;
 }
 
 .aboutprof__img img {
-  width: 100%;
+  width: 65%;
   border-radius: 50%;
 }
 
-
 /* メッセージ部分 */
 .aboutprof__text__area {
-  padding: 150px 0 20px 20px;
+  padding: 0px 0 20px 20px;
+}
+
+.aboutprof-mydate {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 8vw;
+  background-image: url(../img/prof-text-back-06.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+}
+
+.aboutprof-mydate p,
+.aboutprof__img {
+  transform: rotate(-180deg);
+}
+
+.aboutprof__my-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 2.3;
+  text-shadow: 1px 1px #fff;
+  width: 45%;
 }
 
 .prof-name-en {
   font-family: Montserrat;
-  font-size: 28px;
+  font-size: 33px;
   font-weight: 400;
+  text-align: left;
   line-height: 1.2;
-  background-image: url(../img/prof-back-05.png);
-  background-repeat: no-repeat;
-  background-size: 5%;
-  background-position-x: 220px;
-  background-color:rgba(255,255,255,0.8);
-  background-blend-mode:lighten; 
 }
 
 .prof-name-jp {
-  font-family: Zen Kaku Gothic New;
+  font-family: Senobi-gothic;
   font-size: 16px;
   font-weight: 300;
 }
 
 .prof-hobby {
-  font-family: Zen Kaku Gothic New;
+  font-family: Senobi-gothic;
   font-size: 16px;
   font-weight: 100;
-  background-image: url(../img/prof-back-05.png);
-  background-repeat: no-repeat;
-  background-size: 5%;
-  background-color:rgba(255,255,255,0.8);
-  background-blend-mode:lighten; 
+  letter-spacing: -0.1px;
 }
 
 .aboutprof__sub-text {
   font-family: Zen Kaku Gothic New;
-  font-size: 1.87vw;
-  font-weight: 450;
+  font-size: 18px;
+  font-weight: 300;
   line-height: 2.3;
   background-image: url(../img/prof-text-back-06.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 10px 0 0 20px;
   text-shadow: 1px 1px #fff;
-}
-
-.aboutprof__sub-text + .aboutprof__sub-text {
-  padding-top: 8vw;
 }
 
 .aboutprof__sub-text span,
@@ -5510,6 +5508,7 @@ textarea.contact__form__input {
 .profprofile__wrap {
   padding-bottom: 80px;
 }
+
 :root {
   --duration: 2.4s;
   --ease: ease;
@@ -5518,13 +5517,11 @@ textarea.contact__form__input {
 
 .aboutprof__main-text {
   font-family: Zen Kaku Gothic New;
-  font-size: 2.8vw;
+  font-size: 28px;
   font-weight: 400;
   line-height: 2;
   letter-spacing: -0.02em;
-  /* padding-right: 10px;
-  padding-bottom: 4vw; */
-  padding: 0 10px 4vw 40px;
+  padding: 4vw 10px 4vw 40px;
   -webkit-background-clip: text;
   opacity: 0;
   transform: translate(-3px, 0);
@@ -5547,19 +5544,17 @@ textarea.contact__form__input {
   padding-top: 3vw;
 }
 
-
-
 /* sp about */
 @media screen and (max-width: 767px) {
   .sp-top-ttl {
     display: block;
-    font-family: lato;
+    font-family: Montserrat;
     font-size: 16px;
     font-weight: 200;
     line-height: 1.45;
     text-align: center;
     position: relative;
-    top: 30px;
+    top: 10px;
     left: 50%;
     transform: translate(-50%, -2.5%);
   }
@@ -5576,78 +5571,68 @@ textarea.contact__form__input {
     margin-top: 0; /* 最初のspanにはマージンを適用しない */
   }
 
-  .about__wrap {
-    padding: 100px 30px 0 30px;
-  }
-
-  /* メッセージ部分 */
-  .about__text__area {
-    padding-top: 60px;
-  }
-
-  .about__sub-text {
-    font-size: 14px;
-    line-height: 2.2;
-  }
-  /* テキスト  『』部分 */
-  .subtext-group-top {
-    font-size: 12px;
-    padding-top: 10px;
-  }
-
-  .subtext-group-center {
-    display: block;
-    font-size: 12px;
-  }
-
-  .about__sub-text + .about__sub-text {
-    padding-top: 100px;
-  }
-
-  .about__sub-text span {
-    display: block;
-    line-height: 2.8;
-    letter-spacing: 0.04em;
-  }
-
-  .about__main-text span {
-    line-height: 2.2;
-  }
-
-  .profile__wrap {
-    display: block;
-    padding-bottom: 80px;
-  }
-
-  .about__main-text {
-    width: 80%;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: -0.02em;
-    padding-right: 10px;
-    padding-bottom: 4vw;
-  }
-
-  .about__name {
-    display: block;
-    font-size: 12px;
-    padding-top: 35px;
-  }
-
-  .about__img {
+  .aboutprof__img {
     width: 100%;
-    max-width: 767px;
-    margin-top: -100px;
-    margin-bottom: 80px;
-    margin-right: 20px;
-    display: flex;
-    justify-content: end;
+    margin-top: 170px;
   }
 
-  .about__img img {
-    width: 65%;
-    border-radius: 60%;
-    margin-right: -20px;
+  .aboutprof__img img {
+    width: 100%;
+    border-radius: 0%;
+  }
+
+  .aboutprof__wrap {
+    padding: 0px 30px;
+  }
+
+  .aboutprof-mydate {
+    display: block;
+  }
+
+  .aboutprof__my-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+    width: 100%;
+    padding: 15px 0;
+    position: absolute;
+    bottom:-10px;
+    left: 0px;
+    padding-left: 10px;
+    background: linear-gradient(315deg, transparent 45%, rgba(255, 255, 255, 1) 55%);
+  }
+
+  .prof-name-en {
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  .prof-name-jp {
+    font-family: Senobi-gothic;
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .prof-hobby {
+    font-family: Senobi-gothic;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .aboutprof__sub-text {
+    padding: 60px 0 0 20px;
+  }
+
+  .profprofile__wrap {
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
+
+  .aboutprof__name {
+    font-size: 14px;
+    padding-top: 30px;
   }
 }
 
