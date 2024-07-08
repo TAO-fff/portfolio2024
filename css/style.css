@@ -350,6 +350,13 @@ main {
     width: 40%;
   }
 
+    /* about・contactページ 一番上のタイトル */
+    .about__section--ttl,
+    .contact__section--ttl {
+      font-size: 30px;
+      padding: 90px 30px 0 0px;
+    }
+
   /* ボタン*/
   .btn {
     padding: 15px 20px;
@@ -5573,7 +5580,7 @@ textarea.contact__form__input {
 
   .aboutprof__img {
     width: 100%;
-    margin-top: 170px;
+    margin-top: 125px;
   }
 
   .aboutprof__img img {
