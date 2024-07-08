@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -15,6 +14,17 @@
       href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New&display=swap"
       rel="stylesheet"
     />
+    <!-- adobe font -->
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'jyq2xel',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- slick -->
@@ -55,18 +65,26 @@
           <div class="home__mv">
             <div class="mv__img">
               <picture>
-                <source
+                <!-- <source
                   srcset="./img/portofolio_mv_sp@2x-100.jpg"
                   media="(max-width: 550px)"
-                />
+                /> -->
                 <source
-                  srcset="./img/portfolio_mv_tab1-100.jpg"
+                srcset="./img/sp-mv2@2x-8.png"
+                media="(max-width: 550px)"
+              />
+                <source
+                  srcset="./img/tab-mv2-8.png"
                   media="(max-width: 1000px)"
                 />
-                <img
+                <!-- <img
                   src="./img/portfolio_mv-100.jpg"
                   alt="とこよだあけみのポートフォリオ"
-                />
+                /> -->
+                <img
+                src="./img/mv2-8.png"
+                alt="とこよだあけみのポートフォリオ"
+              />
               </picture>
               <h1 class="title">
                 <div class="title-text-group">
@@ -133,14 +151,16 @@
           <section class="home__works container">
             <div class="section__ttl" id="works">
               <h2 class="section__ttl-ja">デザインしてます。</h2>
+              <img src="./img/ttl-back.png" alt="ふき出し">
+            </div>
+
               <p
                 class="section__ttl-en section__ttl-works"
                 id="worksTitle"
-                data-text="WORKS LIST"
+                data-text="WORKS "
               >
-                WORKS LIST
+                WORKS
               </p>
-            </div>
             <div class="home__works__gallery works-slider">
               <!-- works -->
               <div class="gallery__group">
@@ -253,33 +273,36 @@
             <!-- section-ttl  共通クラス -->
             <div class="section__ttl">
               <h2 class="section__ttl-ja">はじめまして。</h2>
+              <img src="./img/ttl-back.png" alt="ふき出し">
+            </div>
+
               <p
                 class="section__ttl-en section__ttl-about"
                 id="aboutTltle"
-                data-text="ABOUT ME"
+                data-text="ABOUT "
               >
-                ABOUT ME
+                ABOUT
               </p>
-            </div>
             <!-- //section-ttl  共通クラス -->
             <!-- profile -->
             <div class="home__profile__wrap">
               <p class="profile-text">
                 <span>とこよだ あけみ</span>
-                <span>神奈川県在住で、千葉県の端っこ生まれ。</span>
+                <span>千葉県の端っこ生まれ、
+                  神奈川県在住。</span>
                 <br />
-                <span
-                  >スポーツ系専門学校のマリンスポーツ科を卒業して、
-                  小学生から30歳頃までスポーツ一筋の生活を送ってました。</span
+                <br
+                  ><span>スポーツ系専門学校を卒業して、<br />
+                  スキューバ―ダイビング関係の仕事、スポーツジムインストラクターをしていました。</span
                 >
                 <br />
 
                 <span
-                  >友人から何気なく言われた『ホームページ作ってみてほしい』の一言をきっかけにWebデザインの世界に飛び込みました。</span
+                  >友人から『ホームページ作ってみてほしい』と声をかけられた事をきっかけにWebデザインの世界に飛び込みました。</span
                 >
                 <br />
                 <span
-                  >あなたのアイデアや想いを形にするお手伝いができればと思っています。
+                  >
                 </span>
               </p>
               <img
@@ -334,15 +357,17 @@
             <!-- section-ttl  共通クラス -->
             <div class="section__ttl" id="skills">
               <h2 class="section__ttl-ja">こんなお手伝いできます。</h2>
-              <p
+              <img src="./img/ttl-back.png" alt="ふき出し">
+            </div>
+            
+            <p
                 class="section__ttl-en section__ttl-skill"
                 id="skillsTitle"
                 data-text="SKILLS"
               >
                 SKILLS
               </p>
-            </div>
-            <!-- //section-ttl -->
+              <!-- //section-ttl -->
             <!-- skill list -->
             <div class="skills__group">
               <!-- skill list 1 -->
@@ -460,6 +485,9 @@
             <!-- section-ttl  共通クラス -->
             <div class="section__ttl" id="contact">
               <h2 class="section__ttl-ja">お気軽にご相談ください。</h2>
+              <img src="./img/ttl-back.png" alt="ふき出し">
+            </div>
+
               <p
                 class="section__ttl-en section__ttl-contact"
                 id="contactTitle"
@@ -467,7 +495,6 @@
               >
                 CONTACT
               </p>
-            </div>
             <!-- //section-ttl -->
             <!-- contact form -->
             <div class="contact__wrapper">
@@ -831,21 +858,21 @@
           slidesToScroll: 1,
           arrows: false,
           autoplay: true,
-          autoplaySpeed: 2000,
+          autoplaySpeed: 1000,
           infinite: true,
           dots: false,
           centerMode: false, // 中央揃え
-          centerPadding: "20%", // 左右のパディング（次のスライドが少し見えるようにする）
+          centerPadding: "0%", // 左右のパディング（次のスライドが少し見えるようにする）
           variableWidth: false,
           responsive: [
             {
-              breakpoint: 1100,
+              breakpoint: 1000,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 arrows: false,
                 autoplay: true,
-                autoplaySpeed: 2000,
+                autoplaySpeed: 1000,
                 infinite: true,
                 dots: false,
                 centerMode: false, // 中央揃え
@@ -860,7 +887,7 @@
                 slidesToScroll: 1,
                 arrows: false,
                 autoplay: true,
-                autoplaySpeed: 2000,
+                autoplaySpeed: 1000,
                 infinite: true,
                 dots: false,
                 centerMode: true, // 中央揃え
