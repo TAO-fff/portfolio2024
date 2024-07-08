@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akemi Tokoyoda Portfolio</title>
+
+    <!--css -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- adobe font -->
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "jyq2xel",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- slick -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <!-- header 固定(left) -->
+      <header id="header">
+        <ul class="header__nav">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./works-gallery.html">Works</a></li>
+          <li><a href="./about.html">About</a></li>
+        </ul>
+
+        <!-- hum メニュー -->
+        <div class="sp__menu__btn"><span></span></div>
+        <nav class="sp__header__nav">
+          <ul class="sp__nav__list">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./works-gallery.html">Works</a></li>
+            <li><a href="./about.html">About</a></li>
+          </ul>
+        </nav>
+      </header>
+      <h2 class="sp-top-ttl">
+        <span>Akemi Tokoyoda</span><span>Portfolio</span>
+      </h2>
+      <!-- //header -->
+
+      <!-- about -->
+      <div class="aboutprof__wrap about__container">
+        <h2 class="about__section--ttl">
+          はじまりは、<span>友だちのお手伝い。</span>
+        </h2>
+
+        <div class="aboutprof__text__area">
+          <div class="aboutprof-mydate">
+            <div class="aboutprof__img">
+              <img src="./img/about-img-100.jpg" alt="プロフィール写真" />
+            </div>
+            <p class="aboutprof__my-text">
+              <span class="prof-name-en">Tokoyoda Akemi</span>
+              <span class="prof-name-jp">とこよだ あけみ</span><br />
+              <span class="prof-hobby">趣味： イラスト練習・動画を見る</span>
+            </p>
+          </div>
+
+          <p class="aboutprof__sub-text">
+            <span class="profsubtext-group-top"
+              >スポーツ系専門学校を卒業後、</span
+            >
+            <span class="profsubtext-group-top"
+              >スポーツインストラクターをしながら、お客様が</span
+            >
+            <span class="profsubtext-group-top"
+              >『理想の自分』に近づくお手伝いがしたいと思い </span
+            ><span class="profsubtext-group-top"
+              >イメージコンサルタント資格を取得。</span
+            >
+            <br />
+            <span class="profsubtext-group-top"
+              >イメージコンサルタントをしながら、</span
+            >
+            <span class="profsubtext-group-top"
+              >なりたい印象を表現する方法、自分らしさを表現することの</span
+            >
+            <span class="profsubtext-group-top"
+              >面白さと奥深さを知り、色々な物のデザインやレイアウトにも</span
+            >
+            <span class="profsubtext-group-top"
+              >興味を持つようになりました。</span
+            ><br />
+            <span>そこから趣味の一つとして、雑誌やSNSなどを参考に</span>
+            <span
+              >雑誌風のデザインやInstagramの投稿画像を作成し、友人に見てもらう</span
+            >
+            <span>ことが楽しみに。</span><br />
+            <span
+              >そんな時、友人に『ホームページを作ってみてほしい』と言われた事が</span
+            >
+
+            <span>きっかけになり、本格的にデザインの勉強を始めました。</span>
+          </p>
+          <br />
+
+          <p class="aboutprof__sub-text">
+            <span class="profsubtext-group-center">今は、</span>
+            <span class="profsubtext-group-center"
+              >『伝えたい世界観を一緒に実現したい』</span
+            >
+            <span class="profsubtext-group-center">
+              あなたの良いところや魅力を、少しでも多くの人にお届けしたい』</span
+            >
+            <br />
+            <span>そんな想いを大切に、デザインを考えています。</span>
+          </p>
+        </div>
+
+        <div class="aboutprof__text__area">
+          <div class="profprofile__wrap">
+            <p class="aboutprof__main-text fade-left">
+              <span> あなたのお困りごとも聞かせてください。</span>
+              <span>一緒に解決するお手伝いをいたします。</span>
+              <span class="aboutprof__name">Akemi Tokoyoda</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- contact -->
+        <section class="contact">
+          <!-- section-ttl  共通クラス -->
+          <div class="section__ttl" id="contact">
+            <h2 class="section__ttl-ja">お気軽にご相談ください。</h2>
+            <img src="./img/ttl-back.png" alt="ふき出し" />
+          </div>
+
+          <p
+            class="section__ttl-en section__ttl-contact"
+            id="contactTitle"
+            data-text="CONTACT"
+          >
+            CONTACT
+          </p>
+          <!-- //section-ttl -->
+          <!-- contact form -->
+          <div class="contact__wrapper">
+            <p class="contact-form__text">
+              <span
+                >業務に関するご相談・お問い合わせ、当サイトに対するメッセージは
+                お問い合わせフォームより承ります。</span
+              >
+
+              <span>3日以内にお返事させていただきます。</span>
+            </p>
+            <div class="contact-btn-area">
+              <div class="contact-form-btn button">
+                <a href="./contact.html">
+                  <p class="contact-btn-ja">お問い合わせフォーム</p>
+                  <p class="contact-btn-en">Contact</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- //contact -->
+      </div>
+    </main>
+    <!-- //スクロールエリア終了  -->
+
+    <!-- footer -->
+    <!-- footer top illust -->
+    <footer class="footer">
+      <div class="person-red">
+        <div class="person-red">
+          <img class="person-red-img" src="./img/person-red@2x-8.png" alt="" />
+          <img
+            class="person-redpair-img"
+            src="./img/person-redpair@2x-8.png"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!-- footer sitemap＆sns -->
+      <div class="footer-container">
+        <div class="footer__wrapper">
+          <!-- sitemap  footer-ttl部分のみ共通クラス-->
+          <!-- footer left -->
+          <!-- <div class="footer-img-left">
+          <img src="./img/footer-left@2x-100.jpg" alt="足あとイラスト" />
+        </div> -->
+          <!-- //footer left -->
+
+          <div class="sitemap__area">
+            <div class="footer-ttl-text">
+              <p class="footer-ttl-map">SITE MAP</p>
+            </div>
+            <div class="sitemap__nav">
+              <ul class="sitemap-item">
+                <a href="./works-gallery.html">
+                  <li>
+                    <p class="sitemap-item-en">WORKS</p>
+                    <p class="sitemap-item-ja">デザインしてます。</p>
+                  </li>
+                </a>
+              </ul>
+
+              <ul class="sitemap-item">
+                <a href="./about.html">
+                  <li>
+                    <p class="sitemap-item-en">ABOUT</p>
+                    <p class="sitemap-item-ja">はじめまして。</p>
+                  </li>
+                </a>
+              </ul>
+
+              <ul class="sitemap-item">
+                <a href="./contact.html">
+                  <li>
+                    <p class="sitemap-item-en">CONTACT</p>
+                    <p class="sitemap-item-ja">お気軽にご相談ください。</p>
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </div>
+          <!-- //sitemap -->
+          <!-- sns -->
+          <div class="sns__area">
+            <div class="footer-ttl-text">
+              <p class="footer-ttl-sns">SOCIAL</p>
+            </div>
+            <div class="sns-icon">
+              <a
+                href="https://www.instagram.com/tao_ffffff/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./img/top-sns-insta@2x-8.png"
+                  alt="インスタグラム アカウント"
+              /></a>
+            </div>
+            <div class="sns-icon">
+              <a href="" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="./img/top-sns-x@2x-8.png"
+                  alt="エックス  アカウント"
+                />
+              </a>
+            </div>
+            <!-- sp sns -->
+            <div class="sp-sns-icon">
+              <a
+                href="https://www.instagram.com/tao_ffffff/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./img/footer_sns_insta@2x-100.jpg"
+                  alt="インスタグラム アカウント"
+              /></a>
+              <a href="" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="./img/footer_sns_x@2x-100.jpg"
+                  alt="エックス  アカウント"
+                />
+              </a>
+            </div>
+          </div>
+          <!-- //sns -->
+          <!-- footer right -->
+          <div class="footer-img-right">
+            <a href="#top" id="back-to-top-btn">
+              <div class="top-btn">
+                <div class="top-btn-arrow"><span></span></div>
+                <img src="./img/footer_right_1@2x-8.png" alt="足あとマーク" />
+                <!-- <p class="top-btn-text">
+                  BACK<span> TO</span> <span>TOP</span>
+                </p> -->
+              </div>
+            </a>
+          </div>
+          <!-- //footer right -->
+        </div>
+        <p class="copyright">© 2024 Akemi Tokoyoda portfolio site</p>
+      </div>
+    </footer>
+
+    <script>
+      // header-nav (hover opacity)
+      $(document).ready(function () {
+        //$(document).ready →ウェブページの準備ができたら何かをする合図
+        $(".header__nav li").hover(
+          function () {
+            //header__nav liにhoverをしたら
+            $(this).siblings().css("opacity", "0.3");
+            /* this→現在の要素。 siblings→hその要素の兄弟要素。
+           現在の要素の兄弟要素(全て)のopacityを0.3に設定する */
+          },
+          function () {
+            $(".header__nav li").css(
+              "opacity",
+              "1"
+            ); /* hoverが外れたときに全てのli要素のopacityを元に戻します */
+          }
+        );
+      });
+
+      // ham 【btn動き】
+      $(function () {
+        $(".sp__menu__btn").on("click", function () {
+          $(".sp__menu__btn").toggleClass("open");
+          $(".sp__header__nav").fadeToggle();
+        });
+
+        //hum click後閉じる
+        $(".sp__nav__list li").on("click", function () {
+          //header nav list liをclickしたら
+          $(".sp__menu__btn").removeClass("open");
+          //sp menu btn のopenクラスを消す。
+          $(".sp__header__nav").fadeOut();
+          //header nav フェードアウトしてもらう
+        });
+      });
+
+      // header-nav  【footerのところで消える】
+      var startPos = 0;
+      var winScrollTop = 0;
+      const Header = $("#header"); //id headerをHeaderへ入れる
+      const Footer = $(".footer__wrapper"); //.footer__wrapperをFooterへ入れる
+
+      $(window).on("scroll", function () {
+        winScrollTop = $(this).scrollTop();
+        /*$(this)→今見ているページ全体  scrollTop()→ページ上からどれくらい下スクロールしたか
+       $(this)+scrollTop() ページの一番上からどのくらいスクロールしたか WinScrollTopに入れる*/
+        var footerTop = Footer.offset().top;
+        //offset() → 指定した要素の位置を返す。 topからfooterがどのくらい下にあるか返してくれる
+
+        if (winScrollTop >= startPos) {
+          /*今の位置(どのくらい下スクロールしたか) >= 前回のスクロール位置
+          winScrollTop(今の位置)がstartPos(前回の位置)よりも以上の場合『今、下にスクロールしている』になる*/
+          if (winScrollTop >= footerTop - $(window).height()) {
+            /*$(window).height() ブラウザの高さを表す
+            今の位置 >= footerの位置 - ウィンドウの高さを引いた位置
+            footerの上がウィンドウの下に達する位置*/
+            $(Header).addClass("is-hide");
+            /*今の位置が、Footer(.footer__wrapper)より大きく(下の位置)になってたら
+            Headerにis-hide(class)を追加。
+            cssで#header.is-hideで少し上に移動＆透明になるようにしてある。
+            cssにtransformを指定する理由：少し上に移動すると自然に隠れるように見える。*/
+          } else {
+            $(Header).removeClass("is-hide");
+          }
+          // 今の位置が、Footerより上に上がったらis-hideをremove。
+        } else {
+          $(Header).removeClass("is-hide");
+          //Footerに到達していない状態でスクロール上下した場合にheader-nav消えないように
+        }
+        startPos = winScrollTop;
+      });
+
+      //メインテキスト 左からフェードイン
+      document.addEventListener("DOMContentLoaded", function () {
+        // ページが完全に準備できてからJavaScriptのコードが正しく動くようにする
+        const fadeElements = document.querySelectorAll(".fade-left");
+        // fadeElementsに、クラス名が fade-left のすべての要素を保存
+        console.log("Fade elements:", fadeElements); // 追加: 要素の選択が正しく行われているか確認
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("in-view");
+              observer.unobserve(entry.target);
+            }
+          });
+        });
+
+        fadeElements.forEach((element) => {
+          observer.observe(element);
+        });
+      });
+
+      // footer 3秒かけて戻る
+      document.addEventListener("DOMContentLoaded", function () {
+        const backToTopBtn = document.getElementById("back-to-top-btn");
+        backToTopBtn.addEventListener("click", function (e) {
+          e.preventDefault();
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // top-btn 1000px以下の時、200pxスクロールしたら出てくる
+      document.addEventListener("DOMContentLoaded", function () {
+        const topBtn = document.querySelector(".top-btn");
+        topBtn.style.display = "none"; // 初期状態では非表示
+
+        window.addEventListener("scroll", function () {
+          if (window.innerWidth <= 1000) {
+            if (window.scrollY > 200) {
+              topBtn.style.display = "flex"; // スクロールが200pxを超えたら表示
+            } else {
+              topBtn.style.display = "none"; // スクロールが200px未満なら非表示
+            }
+          } else {
+            topBtn.style.display = "none"; // 画面幅が1000pxを超えている場合は非表示
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
