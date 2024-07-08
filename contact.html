@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -28,6 +27,40 @@
       rel="stylesheet"
     />
 
+    
+    <!-- adobe font -->
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "jyq2xel",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- slick -->
@@ -41,7 +74,7 @@
         <ul class="header__nav">
           <li><a href="./index.html">Home</a></li>
           <li><a href="./works-gallery.html">Works</a></li>
-          <li><a href="./about.html">About</a></li>
+          <li><a href="./profile.html">About</a></li>
         </ul>
 
         <!-- hum メニュー -->
@@ -50,7 +83,7 @@
           <ul class="sp__nav__list">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./works-gallery.html">Works</a></li>
-            <li><a href="./about.html">About</a></li>
+            <li><a href="./profile.html">About</a></li>
           </ul>
         </nav>
       </header>
@@ -169,34 +202,43 @@
         </form>
         <!-- //フォーム -->
 
-        <!-- contact -->
-        <section class="contact">
-          <!-- section-ttl  共通クラス -->
-          <div class="section__ttl" id="contact">
-            <p class="section__ttl-ja">お気軽にご相談ください。</p>
-            <p class="section__tti-en">CONTACT</p>
-          </div>
-          <!-- //section-ttl -->
-         <!-- contact form -->
-         <div class="contact__wrapper">
-          <p class="contact-form__text">
-            <span
-              >業務に関するご相談・お問い合わせ、当サイトに対するメッセージは
-              お問い合わせフォームより承ります。</span>
-            
-            <span>3日以内にお返事させていただきます。</span>
-          </p>
-          <div class="contact-btn-area">
-            <div class="contact-form-btn button">
-              <a href="./contact.html">
-                <p class="contact-btn-ja">お問い合わせフォーム</p>
-                <p class="contact-btn-en">Contact</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- //contact -->
+               <!-- contact -->
+               <section class="contact">
+                <!-- section-ttl  共通クラス -->
+                <div class="section__ttl" id="contact">
+                  <h2 class="section__ttl-ja">お気軽にご相談ください。</h2>
+                  <img src="./img/ttl-back.png" alt="ふき出し">
+                </div>
+    
+                  <p
+                    class="section__ttl-en section__ttl-contact"
+                    id="contactTitle"
+                    data-text="CONTACT"
+                  >
+                    CONTACT
+                  </p>
+                <!-- //section-ttl -->
+                <!-- contact form -->
+                <div class="contact__wrapper">
+                  <p class="contact-form__text">
+                    <span
+                      >業務に関するご相談・お問い合わせ、当サイトに対するメッセージは
+                      お問い合わせフォームより承ります。</span
+                    >
+    
+                    <span>3日以内にお返事させていただきます。</span>
+                  </p>
+                  <div class="contact-btn-area">
+                    <div class="contact-form-btn button">
+                      <a href="./contact.html">
+                        <p class="contact-btn-ja">お問い合わせフォーム</p>
+                        <p class="contact-btn-en">Contact</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- //contact -->
     </div>
   </main>
   <!-- //スクロールエリア終了  -->
@@ -252,7 +294,7 @@
               </ul>
 
               <ul class="sitemap-item">
-                <a href="./about.html">
+                <a href="./profile.html">
                   <li>
                     <p class="sitemap-item-en">ABOUT</p>
                     <p class="sitemap-item-ja">はじめまして。</p>
