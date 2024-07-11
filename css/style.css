@@ -103,20 +103,11 @@ main {
   border-right: 1px solid transparent; /* 初期状態では透明に設定 */
 }
 
-.section__tti-works {
-  width: 21%;
-}
-
-.section__ttl-about {
-  width: 19%;
-}
-
-.section__ttl-skill {
-  width: 14%;
-}
-
+.section__tti-works,
+.section__ttl-about,
+.section__ttl-skill,
 .section__ttl-contact {
-  width: 18%;
+  width: 20%;
 }
 
 @keyframes blink {
@@ -139,15 +130,20 @@ main {
 
 /* ボタン*/
 .btn {
-  position: relative;
-  padding: 15px 20px;
+  /* position: relative; */
+  padding: 20px 20px;
   border: 1px solid #666;
   font-weight: bold;
+  min-width: 220px;
+  width: 100%; /* Adjust width to 100% to match parent */
+  position: relative; /* Position relative to contain the ::before pseudo-element */
+  display: inline-block; /* Change to inline-block to work with text-align */
 }
 
 .btn::before {
   content: "";
-  width: 16vw;
+  /* width: inherit; */
+  width: 100%; /* Adjust width to 100% to match parent */
   height: 5.5vw;
   position: absolute;
   top: 0.5vw;
@@ -233,7 +229,13 @@ main {
     margin-bottom: 120px;
   }
 
-  .home__works,
+  .home__works {
+    padding: 80px 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+
   .home__about,
   .home__skills,
   .contact {
@@ -271,19 +273,7 @@ main {
     width: 43%;
   }
 
-  /* ボタン*/
-  .btn {
-    padding: 15px 20px;
-    border: 1px solid #666;
-  }
-
-  .btn::before {
-    content: "";
-    width: 280px;
-    height: 80px;
-    top: 5px;
-    left: 4px;
-  }
+ 
 
   /* about・contactページ 一番上のタイトル */
   .about__section--ttl,
@@ -1217,7 +1207,7 @@ main {
 }
 
 .gallery__group {
-  padding: 5.5vw 3vw;
+  padding: 5vw 3vw;
   margin-top: 5vw;
   overflow: hidden;
   width: 100%;
@@ -1500,7 +1490,7 @@ main {
   }
 
   .gallery-item img:hover {
-    transform: scale(0.95, 0.95);
+    transform: scale(1.2);
     transition: ease-in-out 0.3s;
   }
 
@@ -1590,7 +1580,6 @@ main {
   }
 
   .gallery-item img:hover {
-    transform: scale(0.95, 0.95);
     transition: ease-in-out 0.3s;
   }
 
@@ -1612,7 +1601,6 @@ main {
   }
 
   .works-slider .slick-slide {
-    transform: scale(0.9);
     padding-top: 40px;
   }
 
@@ -1647,6 +1635,10 @@ main {
     display: flex;
     align-items: flex-start;
     padding: 20px 0 0px 0;
+  }
+
+  .slick-list draggable {
+    transform: scale(1.2);
   }
 
   .person-yellow2 {
@@ -1719,35 +1711,51 @@ main {
   display: none;
 }
 
+ /* ボタン*/
+ .btn {
+  width: 280px;
+  height: 80px;
+  padding: 15px 20px;
+  border: 1px solid #666;
+  display: flex;
+  align-items: center;
+}
+
+.btn::before {
+  content: "";
+  width: 280px;
+  height: 80px;
+  top: 5px;
+  left: 4px;
+}
+
 /* about-btn・gallery-work共通   (color・枠線etcは btnで共通クラス) */
 .about-btn-area {
-  display: flex;
-  justify-content: end;
-  margin-right: 4vw;
-  padding-top: 16px;
-  cursor: pointer;
+  margin-top: 100px;
+  text-align: right; /* Align contents to the right */
+  margin-right: 20px;
 }
 
 .about-btn {
-  /* width: 16vw; */
-  text-align: center;
-  /* padding: 1.5vw 0; */
-  margin-top: 10vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  display: inline-block; /* Change to inline-block to work with text-align */
 }
 
 .about-btn a {
-  width: 16vw;
+  display: block; /* Ensure the anchor takes the full width of the parent */
+  text-decoration: none; /* Remove default link underline */
 }
+
+
 
 .about-btn-inner {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* width: 25%;
+  min-width: 220px; */
   padding-left: 2vw;
+  width: 100%;
+  min-width: 220px;
 }
 
 .about-btn-text {
@@ -1851,7 +1859,8 @@ main {
 
   /* about-btn   (color/radiusは、btnで共通クラス) */
   .about-btn-area {
-    padding-top: 50px;
+    padding: 0;
+    margin: 30px auto 0 auto;
     justify-content: center;
   }
 
@@ -2102,22 +2111,26 @@ main {
 /* sp skills (home)*/
 /* 1000-767px */
 @media screen and (min-width: 767px) and (max-width: 1000px) {
-  .skill__group--item1 {
-    display: block;
+  .skill__group--item1,
+  .skill__group--item2 {
+    width: 100%;
+    max-width: 780px;
+    justify-content: space-around;
+    padding: 0 10px;
   }
 
-  .skill__group--item2 {
+  /* .skill__group--item2 {
     display: block;
     padding-top: 0;
     gap: 6vw;
-  }
+  } */
 
   .skill__group--item1 li,
   .skill__group--item2 li {
     width: 100%;
     max-width: 480px;
     margin: 60px auto;
-    padding: 60px;
+    padding: 20px 10px;
   }
 
   .skills__ttl-wrapper,
@@ -2127,6 +2140,7 @@ main {
 
   .skills-text.show {
     width: 100%;
+    padding: 10px 20px;
   }
 }
 
@@ -2390,7 +2404,8 @@ main {
 }
 
 .contact-form-btn a:hover {
-  opacity: 0.4;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-blend-mode: lighten;
   transition: 0.2s;
 }
 
@@ -5507,7 +5522,7 @@ textarea.contact__form__input {
   background-image: url(../img/prof-text-back-06.png);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 10px 0 0 20px;
+  padding: 10px 20px 0 20px;
   text-shadow: 1px 1px #fff;
 }
 
