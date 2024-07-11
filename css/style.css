@@ -1745,14 +1745,10 @@ main {
   text-decoration: none; /* Remove default link underline */
 }
 
-
-
 .about-btn-inner {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* width: 25%;
-  min-width: 220px; */
   padding-left: 2vw;
   width: 100%;
   min-width: 220px;
@@ -1842,6 +1838,10 @@ main {
     padding-bottom: 65px;
   }
 
+  .about-btn-inner {
+    width: 70%;
+  }
+
   .sp__profile-text {
     display: block;
     font-family: Zen Kaku Gothic New;
@@ -1856,66 +1856,98 @@ main {
   .sp__profile-text span {
     display: block;
   }
+/* ボタン*/
+.btn {
+  width: 220px;
+  height: 80px;
+  padding: 15px 20px;
+  border: 1px solid #666;
+  display: flex;
+  align-items: center;
+}
 
-  /* about-btn   (color/radiusは、btnで共通クラス) */
-  .about-btn-area {
-    padding: 0;
-    margin: 30px auto 0 auto;
-    justify-content: center;
-  }
+.btn::before {
+  content: "";
+  width: 220px;
+  height: 80px;
+  top: 5px;
+  left: 4px;
+}
 
-  .about-btn-arrow {
-    margin-left: 10px;
-    position: relative;
-    width: 10px;
-    height: 10px;
-  }
+/* about-btn・gallery-work共通   (color・枠線etcは btnで共通クラス) */
+.about-btn-area {
+  margin-top: 100px;
+  text-align: center; /* Align contents to the right */
+  margin-right: 20px;
+}
 
-  .about-btn-arrow span {
-    display: block;
-    width: 10px;
-    height: 8px;
-    margin-left: 55px;
-    position: relative;
-    line-height: 40px;
-  }
+  
+.about-btn-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 8px;
+  width: 100%;
+  min-width: 160px;
+}
 
-  .about-btn-text {
-    font-size: 16px;
-    font-weight: 500;
-    margin: 0 auto;
-  }
+.about-btn-text {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 auto;
+  color: #222;
+}
 
-  .about-btn-arrow span::after {
-    content: "";
-    display: block;
-    width: 1px;
-    height: 10px;
-    position: absolute;
-    top: 1px;
-    right: 2vw;
-    transform: rotate(245deg);
-    border-radius: 5vw;
-  }
+.about-btn-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-left: 8px;
+}
 
-  .about-btn-arrow span::before {
-    content: "";
-    display: block;
-    width: 1px;
-    height: 10px;
-    position: absolute;
-    top: -3px;
-    right: 2vw;
-    transform: rotate(-65deg);
-    border-radius: 5vw;
-  }
+.about-btn:hover .about-btn-arrow {
+  transform: translateX(5px);
+  transition: ease-in-out 0.3s;
+}
 
-  .about-btn {
-    width: 280px;
-    height: 80px;
-    text-align: center;
-    margin-top: 0;
-  }
+.about-btn-arrow span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-left: 8px
+  position: relative;
+}
+
+.about-btn-arrow span::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 7px;
+  background: #222;
+  position: absolute;
+  top: 43%;
+  right: 50%;
+  transform-origin: right center;
+  border-radius: 5vw;
+  transform: rotate(45deg);
+}
+
+.about-btn-arrow span::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 7px;
+  background: #222;
+  position: absolute;
+  top: 4%;
+  right: 50%;
+  transform-origin: right center;
+  border-radius: 5vw;
+  transform: rotate(-45deg);
+}
 }
 /**** about ****/
 /* skills */
