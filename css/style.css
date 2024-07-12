@@ -1749,7 +1749,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 2vw;
+  padding-left: 20px;
   width: 100%;
   min-width: 220px;
 }
