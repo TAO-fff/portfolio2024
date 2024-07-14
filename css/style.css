@@ -3970,7 +3970,8 @@ main {
     box-sizing: border-box;
     background-image: url(../img/prof-text-back-06.png);
     background-size: contain;
-
+    background-color: rgb(255, 255, 255, 0.55);
+    background-blend-mode: lighten;
   }
 
   .works__wrap {
