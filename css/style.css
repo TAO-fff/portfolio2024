@@ -2262,7 +2262,7 @@ main {
     width: 100%;
     max-width: 480px;
     margin: 60px auto;
-    padding: 60px;
+    padding: 20px;
   }
 
   /* .skill__group--item1 li:nth-child(1) {
@@ -2368,7 +2368,7 @@ main {
     width: 100%;
     max-width: 480px;
     margin: 60px auto;
-    padding: 20px;
+    padding: 10px;
   }
 
   /* .skill__group--item1 li:nth-child(1) {
