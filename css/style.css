@@ -759,11 +759,27 @@ main {
 }
 
 /* scroll */
-.scroll-area {
-  width: 2.2%;
+.scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scroll-bar {
+  width: 1.8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
-  top: 90%;
-  left: 12%;
+  left: 28vw;
+  padding-top: 1vw;
+}
+
+.scroll-area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* 適宜調整 */
 }
 
 .mv__scroll-img {
@@ -798,21 +814,6 @@ main {
 }
 
 /* スクロールbar */
-.scroll-bar {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: 52%;
-  padding-top: 77px;
-  position: relative; /* 親要素を相対位置指定 */
-}
-
-.scroll-img-container {
-  width: 100%; /* 必要に応じて調整 */
-  height: 9vw; /* 画像の高さ */
-  overflow: hidden;
-}
-
 .scroll-img {
   position: absolute; /* 相対位置指定した親要素からの絶対位置指定 */
   left: 0;
@@ -849,19 +850,119 @@ main {
   }
 }
 
-.scroll-bar p {
-  font-family: Montserrat;
-  font-size: 1.3vw;
-  font-weight: 300;
-  padding-left: 5px;
-  writing-mode: vertical-rl;
-  position: absolute; /* 相対位置指定した親要素からの絶対位置指定 */
-  left: calc(100% + 10px); /* 画像の右側に配置 */
-  top: 110px;
-  animation: text-slide 1.6s ease-in-out infinite,
-    text-fade 1.6s ease-out infinite;
+
+
+/*=============== stepイメージイラスト =================*/
+.scroll-img-container {
+  width: 100%;
+  max-width: 30px;
 }
 
+.scroll-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin: 30px 0 20px 0;
+}
+
+.steps-right {
+  transform: rotate(130deg);
+  margin-right: 7.5px;
+}
+
+.steps-left {
+  transform: rotate(123deg);
+  margin-left: 10px;
+}
+
+.steps-right img,
+.steps-left img {
+  width: 100%;
+}
+
+.steps-right img {
+  transform: translate(.1vw, .5vh);
+}
+
+/*=============== 画面が読み込まれるとpng画像がループして動く =================*/
+.steps {
+  opacity: 0;
+  animation: step-animation 6.8s infinite; /* アニメーションの合計時間を調整 */
+}
+
+.steps p {
+  font-family: senobi-gothic;
+  font-size: 14px;
+  display: flex;
+  text-align: center;
+  transform: rotate(220deg);
+  justify-content: center;
+  gap: 5px;
+}
+
+@keyframes step-animation {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 90% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+}
+
+.steps:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.steps:nth-child(2) {
+  animation-delay: 0.8s; /* 各ステップの表示タイミングを調整 */
+}
+
+.steps:nth-child(3) {
+  animation-delay: 1.6s;
+}
+
+.steps:nth-child(4) {
+  animation-delay: 2.4s;
+}
+
+.steps:nth-child(5) {
+  animation-delay: 3.2s;
+}
+
+.steps:nth-child(6) {
+  animation-delay: 4s;
+}
+
+.steps:nth-child(1) {
+  animation: step-animation 8s infinite;
+}
+
+.steps:nth-child(2) {
+  animation: step-animation 8s infinite 0.8s;
+}
+
+.steps:nth-child(3) {
+  animation: step-animation 8s infinite 1.6s;
+}
+
+.steps:nth-child(4) {
+  animation: step-animation 8s infinite 2.4s;
+}
+
+.steps:nth-child(5) {
+  animation: step-animation 8s infinite 3.2s;
+}
+
+.steps:nth-child(6) {
+  animation: step-animation 8s infinite 4s;
+}
+
+
+/*  */
 .sp-title-text-group,
 .sp-title__sub,
 .sp-title__main {
@@ -869,7 +970,7 @@ main {
 }
 
 /* sp top・mv (home)*/
-
+/* 1000pxから767pxまで */
 @media screen and (min-width: 767px) and (max-width: 1000px) {
   /* 動く人 イラスト */
   .person-yellow {
@@ -906,41 +1007,29 @@ main {
     line-height: 0.6;
   }
 
-  /* scroll */
-  .scroll-area {
-    width: 2.6%;
-    position: absolute;
-    top: 90%;
-    left: 16%;
-  }
+/* scroll */
+.scroll-bar {
+  width: 2.1%;
+  position: absolute;
+  left: 28vw;
+  margin-top: -50px;
+}
 
-  /* スクロールbar */
-  .scroll-bar {
-    display: flex;
-    justify-content: start;
-    gap: 4px;
-    align-items: center;
-    width: 100%;
-  }
+/* スクロールbar */
 
-  .scroll-img-container {
-    width: 90%; /* 必要に応じて調整 */
-    height: 10vw; /* 画像の高さ */
-    overflow: hidden;
-  }
+/*=============== stepイメージイラスト =================*/
+.scroll-wrapper {
+  gap: 0px;
+  margin: 20px 0;
+}
 
-  .scroll-bar img {
-    width: 50%;
-    padding-top: 5.8vw;
-    padding-bottom: 5vw;
-  }
+.steps-right {
+  margin-right: 7.5px;
+}
 
-  .scroll-bar p {
-    font-size: 12px;
-    left: calc(100%); /* 画像の右側に配置 */
-    top: 110px;
-    letter-spacing: 0.8px;
-  }
+.steps-left {
+  margin-left: 7px;
+}
 }
 
 /* 767px～550pxまで */
@@ -985,26 +1074,15 @@ main {
   }
 
   /* 動く人 イラスト */
-  /* .person-yellow,
-  .person-yellow img,
-  .person-green,
-  .person-green img,
-  .person-gray,
-  .person-gray img,
-  .person-beige,
-  .person-beige img {
-    display: none;
-  } */
-
   .person-yellow {
-    width: 7.3%;
+    width: 7.4%;
     position: absolute;
     top: 48%;
     left: 47%;
   }
 
   .person-green {
-    width: 7.1%;
+    width: 7.3%;
     position: absolute;
     top: 82%;
     left: 56.5%;
@@ -1015,53 +1093,40 @@ main {
   }
 
   .person-beige {
-    width: 8.5%;
+    width: 8.7%;
     position: absolute;
     top: 0%;
     left: 15%;
   }
 
-  /* scroll */
-  .scroll-area {
-    width: 6%;
-    position: absolute;
-    top: 90%;
-    left: 16%;
-  }
+ /* scroll */
+.scroll-bar {
+  width: 2.5%;
+  position: absolute;
+  left: 28vw;
+  margin-top: -130px;
+}
 
-  .mv__scroll-img {
-    width: 100%;
-  }
+/* スクロールbar */
 
-  /* スクロールbar */
-  .scroll-bar {
-    display: flex;
-    justify-content: start;
-    gap: 24px;
-    align-items: center;
-    position: absolute;
-    left: 23px;
-  }
+/*=============== stepイメージイラスト =================*/
+.scroll-wrapper {
+  gap: 0px;
+  margin: 20px 0;
+}
 
-  .scroll-img-container {
-    width: 100%; /* 必要に応じて調整 */
-    height: 15vw; /* 画像の高さ */
-    overflow: hidden;
-  }
+.steps-right {
+  margin-right: 1.5px;
+}
 
-  .scroll-bar img {
-    width: 9px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    display: block; /* imgを表示 */
-    padding-left: 0;
-  }
+.steps-left {
+  margin-left: 1px;
+}
 
-  .scroll-bar p {
-    font-size: 12px;
-    left: calc(100% + 6px); /* 画像の右側に配置 */
-    top: 90px;
-  }
+.steps p {
+  font-size: 13px;
+  gap: 1px;
+}
 
   .sp-title-text-group,
   .sp-title__sub,
@@ -1114,6 +1179,7 @@ main {
     font-weight: 300;
     font-size: 24px;
     padding-top: 10px;
+    text-shadow: 1px 1px 1px #fff
   }
 
   .title-text-group,
@@ -1149,43 +1215,41 @@ main {
     display: none;
   }
 
-  /* scroll */
-  .scroll-area {
-    width: 4.9%;
-    position: absolute;
-    top: 98%;
-    left: 18%;
-  }
+  
+ /* scroll */
+.scroll-bar {
+  width: 4.5%;
+  position: absolute;
+  left: 20vw;
+  margin-top: -145px;
+}
 
-  /* スクロールbar */
-  .scroll-bar {
-    display: flex;
-    justify-content: start;
-    gap: 24px;
-    align-items: center;
-    position: absolute;
-    left: 5px;
-    top: 40px;
-  }
+/* スクロールbar */
 
-  .scroll-img-container {
-    width: 100%;
-    min-width: 10px; /* 必要に応じて調整 */
-    height: 20vw; /* 画像の高さ */
-    overflow: hidden;
-  }
+/*=============== stepイメージイラスト =================*/
+.scroll-wrapper {
+  gap: 0px;
+  margin:20px 0 30px 0;
+}
 
-  .scroll-bar img {
-    width: 9px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    display: block; /* imgを表示 */
-  }
+.steps-right {
+  margin-right: 5.5px;
+}
 
-  .scroll-bar p {
-    font-size: 12px;
-    left: calc(100% + 6px); /* 画像の右側に配置 */
-    top: 90px;
+.steps-left {
+  margin-left: 5px;
+}
+
+.steps p {
+  font-size: 13px;
+  gap: 1px;
+}
+
+  .sp-title-text-group,
+  .sp-title__sub,
+  .sp-title__main {
+    display: block;
+    text-shadow: 1px 1px 1px #fff
   }
 }
 
@@ -1195,7 +1259,8 @@ main {
 
 /* works */
 .home__works {
-  padding-top: 30vw;
+  padding-top: 5vh;
+  margin-top: 33vw;
 }
 
 .home__works__gallery {
@@ -1756,7 +1821,7 @@ main {
 
 .about-btn-text {
   font-family: Montserrat;
-  font-size: 1.2vw;
+  font-size: 20px;
   font-weight: 500;
   text-align: center;
   margin: 0 auto;
