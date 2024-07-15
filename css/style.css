@@ -506,7 +506,7 @@ main {
 
   /* ham  クリック時 btn動き */
   .open span::before {
-    transform: rotate(315deg);
+    transform: rotate(-135deg);
     top: 25px;
     width: 28px;
     bottom: 0px;
@@ -514,7 +514,7 @@ main {
   }
 
   .open span::after {
-    transform: rotate(225deg);
+    transform: rotate(-45deg);
     top: 25px;
     width: 28px;
     background-color: #333;
