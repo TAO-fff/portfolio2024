@@ -888,7 +888,7 @@ main {
 /*=============== 画面が読み込まれるとpng画像がループして動く =================*/
 .steps {
   opacity: 0;
-  animation: step-animation 6.8s infinite; /* アニメーションの合計時間を調整 */
+  animation: step-animation 3s infinite; /* アニメーションの合計時間を調整 */
 }
 
 .steps p {
@@ -918,47 +918,47 @@ main {
 }
 
 .steps:nth-child(2) {
-  animation-delay: 0.8s; /* 各ステップの表示タイミングを調整 */
+  animation-delay: 0.4s; /* 各ステップの表示タイミングを調整 */
 }
 
 .steps:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+.steps:nth-child(4) {
+  animation-delay: 1.2s;
+}
+
+.steps:nth-child(5) {
   animation-delay: 1.6s;
 }
 
-.steps:nth-child(4) {
-  animation-delay: 2.4s;
-}
-
-.steps:nth-child(5) {
-  animation-delay: 3.2s;
-}
-
 .steps:nth-child(6) {
-  animation-delay: 4s;
+  animation-delay: 2s;
 }
 
 .steps:nth-child(1) {
-  animation: step-animation 8s infinite;
+  animation: step-animation 5s infinite;
 }
 
 .steps:nth-child(2) {
-  animation: step-animation 8s infinite 0.8s;
+  animation: step-animation 5s infinite 0.4s;
 }
 
 .steps:nth-child(3) {
-  animation: step-animation 8s infinite 1.6s;
+  animation: step-animation 5s infinite 0.8s;
 }
 
 .steps:nth-child(4) {
-  animation: step-animation 8s infinite 2.4s;
+  animation: step-animation 5s infinite 1.2s;
 }
 
 .steps:nth-child(5) {
-  animation: step-animation 8s infinite 3.2s;
+  animation: step-animation 5s infinite 1.6s;
 }
 
 .steps:nth-child(6) {
-  animation: step-animation 8s infinite 4s;
+  animation: step-animation 5s infinite 2s;
 }
 
 
