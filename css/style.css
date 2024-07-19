@@ -48,10 +48,6 @@ main {
 }
 
 /*top-page（右)*/
-.home__wrap {
-  padding-left: 80px;
-}
-
 .home__mv {
   padding-top: 0;
   padding-left: 0px;
@@ -381,16 +377,16 @@ main {
   width: 100%;
   max-width: 160px;
   margin: 0 auto;
-  padding: 35px 0 0 20px;
+  padding: 35px 20px 0 20px;
   position: fixed;
 }
 
 .header__nav li {
   width: 170px;
   font-family: Montserrat;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 300;
-  padding-top: 20px;
+  margin-top: 20px;
   text-align: left;
   opacity: 1;
   transition: opacity 0.1s;
@@ -625,25 +621,25 @@ main {
 }
 
 @keyframes walk {
-  0% {
+  0%, 60% {
     transform: rotate(0);
   }
-  10% {
+  10%, 70% {
     transform: rotate(-2deg);
   }
-  12% {
+  12%, 72% {
     transform: rotate(2deg);
   }
-  14% {
+  14%, 74% {
     transform: rotate(-2deg);
   }
-  16% {
+  16%, 76% {
     transform: rotate(2deg);
   }
-  18% {
+  18%, 78% {
     transform: rotate(-2deg);
   }
-  100% {
+  40%, 100% {
     transform: rotate(0);
   }
 }
@@ -704,25 +700,25 @@ main {
   100% {
     transform: translateY(0);
   }
-  40% {
+  10%, 50% {
     transform: rotate(2deg);
   }
-  42% {
+  12%, 52% {
     transform: rotate(-2deg);
   }
-  44% {
+  14%, 54% {
     transform: rotate(2deg);
   }
-  48% {
+  18%, 58% {
     transform: rotate(-2deg);
   }
-  50% {
+  20%, 60% {
     transform: translateX(1px);
   }
-  55% {
+  25%, 65% {
     transform: translateX(3px);
   }
-  60% {
+  30%, 60% {
     transform: translateX(4px);
   }
 }
@@ -732,28 +728,28 @@ main {
   100% {
     transform: translateY(0);
   }
-  10% {
+  10%, 70% {
     transform: rotate(2deg);
   }
-  12% {
+  12%, 72% {
     transform: rotate(-2deg);
   }
-  14% {
+  14%, 74% {
     transform: rotate(2deg);
   }
-  18% {
+  18%, 78% {
     transform: rotate(-2deg);
   }
-  20% {
+  20%, 80% {
     transform: translateX(1px);
   }
-  25% {
+  25%, 85% {
     transform: translateX(3px);
   }
-  30% {
+  30%, 90% {
     transform: translateX(4px);
   }
-  40% {
+  40%, 95% {
     transform: translateX(5px);
   }
 }
@@ -871,21 +867,30 @@ main {
   margin-right: 7.5px;
 }
 
+.steps-right p {
+  transform: rotate(-128deg);
+}
+
 .steps-left {
   transform: rotate(123deg);
   margin-left: 10px;
 }
 
+.steps-left p {
+  transform: rotate(-125deg);
+}
+
+
 .steps-right img,
 .steps-left img {
-  width: 100%;
+  width: 95%;
+  min-width: 14px;
 }
 
 .steps-right img {
   transform: translate(.1vw, .5vh);
 }
 
-/*=============== 画面が読み込まれるとpng画像がループして動く =================*/
 .steps {
   opacity: 0;
   animation: step-animation 3s infinite; /* アニメーションの合計時間を調整 */
@@ -896,7 +901,7 @@ main {
   font-size: 14px;
   display: flex;
   text-align: center;
-  transform: rotate(220deg);
+  /* transform: rotate(220deg); */
   justify-content: center;
   gap: 5px;
 }
