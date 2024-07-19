@@ -772,7 +772,7 @@ main {
   align-items: center;
   position: absolute;
   left: 28vw;
-  padding-top: 1vw;
+  padding-top: 5vw;
 }
 
 .scroll-area {
@@ -1259,7 +1259,7 @@ main {
 
 /* works */
 .home__works {
-  padding-top: 5vh;
+  padding-top: 10vh;
   margin-top: 33vw;
 }
 
