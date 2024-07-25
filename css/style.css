@@ -700,25 +700,25 @@ main {
   100% {
     transform: translateY(0);
   }
-  10%, 50% {
+  10%, 70% {
     transform: rotate(2deg);
   }
-  12%, 52% {
+  12%, 72% {
     transform: rotate(-2deg);
   }
-  14%, 54% {
+  14%, 74% {
     transform: rotate(2deg);
   }
-  18%, 58% {
+  18%, 78% {
     transform: rotate(-2deg);
   }
-  20%, 60% {
+  20%, 80% {
     transform: translateX(1px);
   }
-  25%, 65% {
+  25%, 85% {
     transform: translateX(3px);
   }
-  30%, 60% {
+  30%, 80% {
     transform: translateX(4px);
   }
 }
