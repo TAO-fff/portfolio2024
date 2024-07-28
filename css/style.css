@@ -97,6 +97,7 @@ main {
   overflow: hidden; /* 必須 */
   white-space: nowrap; /* 必須 */
   border-right: 1px solid transparent; /* 初期状態では透明に設定 */
+  width: 20%;
 }
 
 .section__tti-works,
@@ -696,29 +697,28 @@ main {
 }
 
 @keyframes greeting {
-  0%,
-  100% {
+  0%, 60%, 100% {
     transform: translateY(0);
   }
-  10%, 70% {
+  10%, 80% {
     transform: rotate(2deg);
   }
-  12%, 72% {
+  12%, 82% {
     transform: rotate(-2deg);
   }
-  14%, 74% {
+  14%, 84% {
     transform: rotate(2deg);
   }
-  18%, 78% {
+  18%, 88% {
     transform: rotate(-2deg);
   }
-  20%, 80% {
+  20%, 90% {
     transform: translateX(1px);
   }
-  25%, 85% {
+  25%, 93% {
     transform: translateX(3px);
   }
-  30%, 80% {
+  30%, 98% {
     transform: translateX(4px);
   }
 }
@@ -1988,7 +1988,6 @@ main {
   width: 10px;
   height: 10px;
   margin-left: 8px
-  position: relative;
 }
 
 .about-btn-arrow span::after {
