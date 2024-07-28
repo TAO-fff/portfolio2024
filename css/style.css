@@ -80,12 +80,12 @@ main {
   font-family: senobi-gothic;
   font-size: 2.6vw;
   font-weight: 400;
-  padding: 25px 0px 0px 0px;
+  padding: 25px 0px 0px 12px;
   white-space: nowrap;
   letter-spacing: -5px;
   color: #333;
   background-position: left bottom;
-  text-align: center;
+  text-align: left;
 }
 
 .section__ttl-en {
