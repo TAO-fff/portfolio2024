@@ -1,0 +1,305 @@
+
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akemi Tokoyoda Portfolio</title>
+
+    <!--css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    
+    <!-- adobe font -->
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "jyq2xel",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- slick -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <!-- header 固定(left) -->
+      <header id="header">
+        <ul class="header__nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../works-gallery.html">Works</a></li>
+          <li><a href="../profile.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+  
+        <!-- hum メニュー -->
+        <div class="sp__menu__btn"><span></span></div>
+        <nav class="sp__header__nav">
+          <ul class="sp__nav__list">
+            <li><a href="../index.html">Home</a></li>
+          <li><a href="../works-gallery.html">Works</a></li>
+          <li><a href="../profile.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+  
+  
+      <!-- //works img -->
+      <div class="works__wrap works__container">
+        <div class="works__top-img">
+          <!-- work スライダー-->
+          <div class="works__slider">
+            <div class="slider-img">
+              <img
+                src="../img/works2__slider1-100.jpg"
+                alt="美容室 ランディングーページ 美容室内の雰囲気"
+              />
+            </div>
+            <div class="slider-img">
+              <img src="../img/works2__slider2-100.jpg" alt="美容室コンセプト" />
+            </div>
+            <div class="slider-img">
+              <img src="../img/works2__slider3-100.jpg" alt="ヘアスタイル" />
+            </div>
+            <div class="slider-img">
+              <img src="../img/works2__slider4-100.jpg" alt="メニューと料金表" />
+            </div>
+            <div class="slider-img">
+              <img
+                src="../img/works2__slider5-100.jpg"
+                alt="アクセス方法とコンタクト"
+              />
+            </div>
+          </div>
+          <!-- //works スライダー -->
+        </div>
+        <!-- works 説明部分 -->
+        <ul class="works__information">
+          <li class="works-ttl">美容室 ランディングページ</li>
+          <li class="works-tool">
+            <p class="tool-ttl">使用ツール</p>
+            <p class="use-tool">Design / illustrator / Photoshop</p>
+          </li>
+          <li class="works-period">
+            <p class="period-ttl">制作期間</p>
+            <p class="production-period">1週間</p>
+          </li>
+          <li class="works-text">
+            クライアントからのご要望を設定し、デザインを考案しました。
+          </li>
+        </ul>
+        <!-- works gallery -->
+        <div class="works__gallery">
+          <div class="works__gallery--list">
+            <img
+              src="../img/works2__gallery1-100.jpg"
+              alt="美容室 ランディングページ 全体画像"
+            />
+            <img
+              src="../img/works2__gallery2-100.jpg"
+              alt="美容室 ランディングページ 全体画像"
+            />
+          </div>
+        </div>
+
+
+
+              <!-- contact -->
+              <section class="contact">
+                <!-- section-ttl  共通クラス -->
+                <div class="section__ttl" id="contact">
+                  <h2
+                    class="section__ttl-ja js-splitText js-text-effect"
+                    id="04"
+                  >
+                    お気軽にご相談ください。
+                  </h2>
+                </div>
+
+                <p
+                  class="section__ttl-en section__ttl-contact"
+                  id="contactTitle"
+                  data-text="CONTACT"
+                >
+                  CONTACT
+                </p>
+                <!-- //section-ttl -->
+                <!-- contact form -->
+                <div class="contact__wrapper">
+                  <p class="contact-form__text">
+                    <span
+                      >業務に関するご相談・お問い合わせ、当サイトに対するメッセージは
+                      お問い合わせフォームより承ります。</span
+                    >
+
+                    <span>3日以内にお返事させていただきます。</span>
+                  </p>
+                  <div class="contact-btn-area">
+                    <div class="contact-form-btn button">
+                      <a href="./contact.html">
+                        <p class="contact-btn-ja">お問い合わせフォーム</p>
+                        <p class="contact-btn-en">Contact</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- //contact -->
+      </div>
+    </main>
+    <!-- //スクロールエリア終了  -->
+
+ <!-- footer -->
+    <!-- footer top illust -->
+    <footer class="footer">
+        <div class="person-red">
+          <div class="person-red">
+            <img class="person-red-img" src="../img/person-red@2x-8.png" alt="" />
+            <img
+              class="person-redpair-img"
+              src="../img/person-redpair@2x-8.png"
+              alt=""
+            />
+          </div>
+        </div>
+  
+        <!-- footer sitemap＆sns -->
+  <!-- footer sitemap＆sns -->
+  <div class="footer-container">
+    <div class="footer__wrapper">
+      <!-- sitemap -->
+      <div class="sitemap__area">
+        <div class="footer-ttl footer-ttl-map">
+          <p class="footer-ttl-text ">SITE MAP</p>
+        </div>
+        <div class="sitemap__nav">
+          <div class="sitemap-item-wrapper">
+            <a href="../works-gallery.html" class="footer-btn animation-target">
+              <div class="sitemap-item-btn-inner">
+                <span class="footer-btn-text footer-btn-ja">デザインしてます。</span>
+                <span class="footer-btn-text footer-btn-en">WORKS</span>
+              </div>
+            </a>
+          </div>
+  
+          <div class="sitemap-item-wrapper">
+            <a href="../about.html" class="footer-btn animation-target">
+              <div class="sitemap-item-btn-inner">
+                <span class="footer-btn-text footer-btn-ja">はじめまして。</span>
+                <span class="footer-btn-text footer-btn-en">ABOUT</span>
+              </div>
+            </a>
+          </div>
+  
+          <div class="sitemap-item-wrapper">
+            <a href="../contact.html" class="footer-btn animation-target">
+              <div class="sitemap-item-btn-inner">
+                <span class="footer-btn-text footer-btn-ja">お気軽にご相談ください。</span>
+                <span class="footer-btn-text footer-btn-en">CONTACT</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- sns -->
+      <div class="footer-sns-wrap">
+        <div class="sns__area">
+          <div class="footer-ttl footer-ttl-sns">
+            <p class="footer-ttl-text">SOCIAL</p>
+          </div>
+          <div class="sns-icon">
+            <div class="sns-icon-img icon-btn">
+              <a href="https://www.instagram.com/tao_ffffff/" target="_blank" rel="noopener noreferrer">
+                <img src="../img/top-sns-insta@2x-8.png" alt="インスタグラム アカウント" />
+              </a>
+            </div>
+            <div class="sns-icon-img icon-btn">
+              <a href="" target="_blank" rel="noopener noreferrer">
+                <img src="../img/top-sns-x@2x-8.png" alt="エックス アカウント" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+            <!-- //sns -->
+            <!-- footer right -->
+            <div class="footer-img-right">
+              <a href="#top" id="back-to-top-btn">
+                <div class="top-btn">
+                  <div class="top-btn-arrow"><span></span></div>
+                  <img src="../img/footer_right_1@2x-8.png" alt="足あとマーク" />
+                </div>
+              </a>
+            </div>
+            <!-- //footer right -->
+          <p class="copyright">© 2024 Akemi Tokoyoda portfolio site</p>
+        </div>
+      </footer>
+  
+      <!-- GSAP CDN -->
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Observer.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EaselPlugin.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/PixiPlugin.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+      <!-- javascript・GSAP -->
+       <script src="../js/header_footer.js"></script>
+      <script src="../js/work.js"></script>
+    </body>
+  </html>
+  
