@@ -1559,29 +1559,11 @@ main {
 
 /* 767-520px以下 */
 @media screen and (min-width: 520px) and (max-width: 767px) {
-  .works-scroll-area {
-    top: 3%;
-    left: 43%;
-    gap: 5px;
-  }
-
-  .scrolldown1::after {
-    height: 15px; /* 縦の線の高さ */
-    width: 2.5px;
-  }
-
-  .scrolldown1::before {
-    width: 6px;
-    height: 2.5px;
-  }
-
+  .works-scroll-area,
+  .scrolldown1::after.about-btn-inner,
+  .scrolldown1::before,
   .works-scroll-area p {
-    font-size: 12px;
-    color: #fbfbfb;
-    letter-spacing: 0.08rem;
-    background-color: #9dc4b7;
-    padding: 5px;
-    writing-mode: horizontal-tb;
+   display: none;
   }
 
   .side-scroll {
@@ -1601,29 +1583,11 @@ main {
     padding: 115px 0 0 0;
   }
 
-  .works-scroll-area {
-    top: 160px;
-    left: 43%;
-    gap: 5px;
-  }
-
-  .scrolldown1::after {
-    height: 15px; /* 縦の線の高さ */
-    width: 1.5px;
-  }
-
-  .scrolldown1::before {
-    width: 6px;
-    height: 1.5px;
-  }
-
+  .works-scroll-area,
+  .scrolldown1::after.about-btn-inner,
+  .scrolldown1::before,
   .works-scroll-area p {
-    font-size: 10px;
-    color: #fbfbfb;
-    letter-spacing: 0.08rem;
-    background-color: #9dc4b7;
-    padding: 5px;
-    writing-mode: horizontal-tb;
+   display: none;
   }
 
   /* 横スクロールアイテムのサイズ調整 */
