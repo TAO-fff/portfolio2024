@@ -139,65 +139,72 @@ $(function () {
 
 
 
-/**** works（横スクロール・スクロールとheader inout） ****/
-// worksの横スクロール + header-nav
-const listWrapperEl = document.querySelector(".side-scroll-list-wrapper");
-const listEl = document.querySelector(".side-scroll-list");
-const firstItem = document.querySelector('.side-scroll-item');
+document.addEventListener('DOMContentLoaded', () => {
+  const listWrapperEl = document.querySelector(".side-scroll-list-wrapper");
+  const listEl = document.querySelector(".side-scroll-list");
+  const firstItem = document.querySelector('.side-scroll-item');
 
-// スクロール終了位置の計算
-const calculateEndScrollPosition = () => Math.max(0, listEl.scrollWidth - listWrapperEl.clientWidth);
-let endScrollPosition = calculateEndScrollPosition();
+  // 横スクロールの終了位置を再計算
+  const calculateEndScrollPosition = () => {
+    const listItemWidth = firstItem.clientWidth; // 各アイテムの幅を取得
+    const lastItemOffset = listEl.scrollWidth - listItemWidth; // 最後のアイテムの位置
+    const centeredOffset = (listWrapperEl.clientWidth - listItemWidth) / 2; // 中央位置のオフセット
+    return Math.max(0, lastItemOffset - centeredOffset); // 中央位置でスクロールを止める
+  };
 
-// .side-scroll-itemの高さを設定
-const setListWrapperHeight = () => {
-  if (firstItem) {
-    listWrapperEl.style.height = `${firstItem.clientHeight}px`;
-  }
-};
+  let endScrollPosition = calculateEndScrollPosition();
 
-// ページ読み込み時に高さを設定
-window.addEventListener('load', () => {
-  setListWrapperHeight();
-  endScrollPosition = calculateEndScrollPosition();
-  
-  // 横スクロールのアニメーション
-  gsap.to(listEl, {
-    x: () => -endScrollPosition, // 横方向のスクロール
-    ease: "none",
-    scrollTrigger: {
-      trigger: ".home__work",
-      start: "top top", // スクロール開始位置
-      end: () => `+=${endScrollPosition}`, // 横スクロールの終了位置
-      scrub: true,
-      pin: true,
-      anticipatePin: 1,
-      invalidateOnRefresh: true, // リサイズ時に再計算
-    },
+  // .side-scroll-itemの高さを設定
+  const setListWrapperHeight = () => {
+    if (firstItem) {
+      listWrapperEl.style.height = `${firstItem.clientHeight}px`;
+    }
+  };
+
+  // ページ読み込み時に高さを設定
+  window.addEventListener('load', () => {
+    setListWrapperHeight();
+    endScrollPosition = calculateEndScrollPosition();
+
+    // 横スクロールのアニメーション
+    gsap.to(listEl, {
+      x: () => -endScrollPosition, // 修正後の終了位置に基づいてスクロール
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".home__work",
+        start: "top top", // スクロール開始位置
+        end: () => `+=${endScrollPosition}`, // 横スクロールの終了位置
+        scrub: true,
+        pin: true,
+        anticipatePin: 1,
+        invalidateOnRefresh: true, // リサイズ時に再計算
+      },
+    });
+
+    // works-scroll-areaのフェードイン・フェードアウトのアニメーションを追加
+    gsap.fromTo(".works-scroll-area", 
+      { opacity: 1 }, 
+      {
+        opacity: 0, 
+        scrollTrigger: {
+          trigger: ".side-scroll-list-wrapper",
+          start: "top top",  // スクロール開始位置
+          end: () => `bottom+=${endScrollPosition} top`,  // .side-scroll-list-wrapper の最後までスクロールした時点でフェードアウト
+          scrub: true,
+          onLeave: () => gsap.to(".works-scroll-area", { opacity: 0, duration: 0.5 }),  // フェードアウト
+          onEnterBack: () => gsap.to(".works-scroll-area", { opacity: 1, duration: 0.5 })  // 戻ってきたときに再度フェードイン
+        }
+      }
+    );
   });
 
-  // works-scroll-areaのフェードイン・フェードアウトのアニメーションを追加
-  gsap.fromTo(".works-scroll-area", 
-    { opacity: 1 }, 
-    {
-      opacity: 0, 
-      scrollTrigger: {
-        trigger: ".side-scroll-list-wrapper",
-        start: "top top",  // スクロール開始位置
-        end: () => `bottom+=${endScrollPosition} top`,  // .side-scroll-list-wrapper の最後までスクロールした時点でフェードアウト
-        scrub: true,
-        onLeave: () => gsap.to(".works-scroll-area", { opacity: 0, duration: 0.5 }),  // フェードアウト
-        onEnterBack: () => gsap.to(".works-scroll-area", { opacity: 1, duration: 0.5 })  // 戻ってきたときに再度フェードイン
-      }
-    }
-  );
+  // リサイズ時にも高さを再設定
+  window.addEventListener('resize', () => {
+    setListWrapperHeight();
+    endScrollPosition = calculateEndScrollPosition();
+  });
 });
 
-// リサイズ時にも高さを再設定
-window.addEventListener('resize', () => {
-  setListWrapperHeight();
-  endScrollPosition = calculateEndScrollPosition();
-});
 
 
 /**** design・about ボタン ****/
