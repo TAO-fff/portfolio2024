@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akemi Tokoyoda Portfolio</title>
+    <meta name="description" content="自主制作デザインのポートフォリオ" />
+    <meta content="Akemi tokoyoda portfolio" property="og:title" />
+    <meta
+      content="コーディングとデザインが趣味なWebサイトデベロッパーのポートフォリオ"
+      property="og:description"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="layout-wrap">
+    <!-- nav hamメニュー -->
+    <div class="nav-wrapper">
+      <button
+        id="toggle"
+        class="hamburger"
+        type="button"
+        aria-label="メニューを開く"
+        aria-controls="nav"
+        aria-expanded="false"
+      >
+        <span class="hamburgerLine"></span>
+      </button>
+      <nav id="nav" class="nav" aria-hidden="true">
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="./index.html">Top</a></li>
+          <li><a href="">Profile</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- top img -->
+    <main id="main" class="works-main">
+      <div class="works-img-wrapper">
+        <picture>
+          <source
+            srcset="./img/sp-works@2x-100.jpg"
+            media="(max-width: 767px)"
+          />
+          <source srcset="./img/works-top-100.jpg" media="(min-width: 768px)" />
+          <img
+            src="./img/works-top-100.jpg"
+            alt="Akemi Tokoyodポートフォリオ"
+          />
+        </picture>
+      </div>
+
+      <div class="ttl-container">
+        <section class="works">
+          <div class="section-ttl-beside mont">
+            <p>About My</p>
+          </div>
+          <div class="section-ttl-vertical mont">
+            <p>Development</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- scroll -->
+      <div class="scroll-container">
+        <div class="scroll-wrapper">
+          <p class="scroll-txt mont"><span></span>Scroll</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- side title -->
+    <div class="side-ttl-container works-side-ttl">
+      <div class="side-ttl-wrapper">
+        <p class="side-ttl-txt mont"><span></span>Works</p>
+      </div>
+    </div>
+
+    <!-- picture -->
+    <section class="works">
+      <div class="works-photos">
+        <div class="work-photos-wrapper">
+          <div class="photos-img-box">
+            <ul>
+              <li class="photo-item" id="photo1">
+                <a href=""
+                  ><img
+                    src="./img/works5-mobile@2x-100.jpg"
+                    alt="携帯プランバナー"
+                /></a>
+              </li>
+              <li class="photo-item" id="photo2">
+                <a href=""
+                  ><img
+                    src="./img/works4-travel@2x-100.jpg"
+                    alt="アプリリリースバナー"
+                /></a>
+              </li>
+
+              <li class="photo-item" id="photo3">
+                <a href=""
+                  ><img
+                    src="./img/works3-rich@2x-100.jpg"
+                    alt="バナーデザイン製作品 飲食店バナー"
+                /></a>
+              </li>
+              <li class="photo-item" id="photo4">
+                <a href=""
+                  ><img
+                    src="./img/works2-pop@2x-100.jpg"
+                    alt="バナーデザイン製作品 飲食店バナー"
+                /></a>
+              </li>
+              <li class="photo-item" id="photo5">
+                <a href=""
+                  ><img
+                    src="./img/works1-life@2x-100.jpg"
+                    alt="WEBデザイン作品 美容室ホームページ"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="works-btn-wrap">
+        <div class="works-btn">
+          <a href="">
+            <p class="btn-txt mont">View More</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- works slider -->
+      <div class="works-gallery-container">
+        <div class="works-gallery-wrap works-slider">
+          <div class="works-item works-slider-item">
+            <img src="./img/works1-life@2x-100.jpg" alt="" />
+          </div>
+
+          <div class="works-item works-slider-item">
+            <img src="./img/works2-pop@2x-100.jpg" alt="" />
+          </div>
+
+          <div class="works-item works-slider-item">
+            <img src="./img/works3-rich@2x-100.jpg" alt="" />
+          </div>
+
+          <div class="works-item works-slider-item">
+            <img src="./img/works4-travel@2x-100.jpg" alt="" />
+          </div>
+
+          <div class="works-item works-slider-item">
+            <img src="./img/works5-mobile@2x-100.jpg" alt="" />
+          </div>
+
+          <div class="works-item works-slider-item">
+            <img src="./img/works6-cafe@2x-100.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills -->
+    <section class="skills">
+      <div class="skills-container">
+        <!-- left side title -->
+        <div class="side-ttl-container skills-side-ttl">
+          <div class="side-ttl-wrapper">
+            <p class="side-ttl-txt mont"><span></span>Skills</p>
+          </div>
+        </div>
+        <!-- skill item -->
+        <div class="skills-scrolltrigger-box">
+          <div class="skills-box1"></div>
+          <div class="skills-box2"></div>
+          <div class="skills-box3"></div>
+
+          <div class="skills-trigger-block">
+            <div class="skills-block">
+              <p class="skills-block-ttl mont">Design</p>
+              <p class="skills-block-txt">
+                デザインの基礎を習得しています。
+                目的やご希望に合わせたデザインを考え、ワイヤーフレーム・デザインカンプを作成することが可能です。
+              </p>
+            </div>
+            <div class="skills-block">
+              <p class="skills-block-ttl mont">Photoshop</p>
+              <p class="skills-block-txt">
+                hotoshopを駆使して写真の色補正や、複数枚の画像を組み合わせた合成加工まで行います。また人物や小物などの切り抜き作業が可能です。
+              </p>
+            </div>
+            <div class="skills-block">
+              <p class="skills-block-ttl mont">Illustrator</p>
+              <p class="skills-block-txt">
+                illustratorでバナー広告制作を行います。また、文字を加工しデフォルトに無い文字や、装飾を作成する作業が可能です。
+              </p>
+            </div>
+            <div class="skills-block">
+              <p class="skills-block-ttl">HTML / CSS</p>
+              <p class="skills-block-txt">
+                Webサイトを一から構築するための、HTML・CSSコーディングが可能です。メインで使用しているエディタはVisual
+                Studio Codeです。
+              </p>
+            </div>
+
+            <div class="skills-block">
+              <p class="skills-block-ttl mont">jQuery</p>
+              <p class="skills-block-txt">
+                スライダー・ハンバーガーメニュー・モーダルウィンドウなど、webサイトに簡単な動きをつけるための、jQueryカスタマイズが可能です。
+              </p>
+            </div>
+
+            <div class="skills-block">
+              <p class="skills-block-ttl mont">レスポンシブ対応</p>
+              <p class="skills-block-txt">
+                パソコン、タブレット、携帯など各デバイスの画面サイズに応じて、デザインの作成をすることや、コーディングが可能です。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+      <div class="footer-container">
+        <!-- footer-left -->
+        <div class="footer-left">
+          <div class="footer-left-wrap">
+            <span class="footer-ttl-content"></span>
+            <div class="footer-left-txt">
+              <p>
+                <span>Akemi</span><span>Tokyoda</span><span>Portfolio</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer-right -->
+        <div class="footer-right">
+          <div class="footer-container">
+            <div class="footer-right-wrap">
+              <nav class="footer-nav">
+                <div class="footer-nav-item mont">
+                  <a href="./index.html">Top</a>
+                </div>
+                <div class="footer-nav-item mont">
+                  <a href="">Profile</a>
+                </div>
+                <div class="footer-nav-item mont">
+                  <a href="">Contact</a>
+                </div>
+              </nav>
+              <div class="copy-right mont">
+                <p>&copy Akemi Tokoyodas<span>Portfolio</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+        <!-- footer-center -->
+        <div class="footer-center">
+          <div class="footer-center-wrap">
+            <img src="./img/footer-center.png" alt="" />
+          </div>
+        </div>
+    </section>
+</div>
+
+    <!-- nav svg -->
+    <svg
+      class="overlay"
+      width="100%"
+      height="100%"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <path
+        id="overlayPath"
+        class="overlayPath"
+        vector-effect="non-scaling-stroke"
+        d="M 0 100 V 100 Q 50 100 100 100 V 100 z"
+        fill="#f6faf5"
+      />
+    </svg>
+
+    <!-- GSAP CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Observer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EaselPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/PixiPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+
+    <!-- js -->
+    <script src="./js/common.js"></script>
+    <script src="./js/works.js"></script>
+  </body>
+</html>
