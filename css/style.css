@@ -373,14 +373,14 @@ img {
 
 .mv-copy {
   position: absolute;
-  top: calc(100% - 83%);
-  left: calc(100% - 81%);
+  top: calc(100% - 79%);
+  left: calc(100% - 85%);
   padding: 20px;
 }
 
 .mv-site-ttl {
   position: absolute;
-  bottom: 0;
+  bottom: calc(100% - 94%);
   right: calc(100% - 98%);
   padding: 10px;
   z-index: 3;
