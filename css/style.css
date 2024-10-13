@@ -350,7 +350,7 @@ body {
 ----------------------------------------------------*/
 .main-view {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
@@ -367,7 +367,6 @@ picture {
 }
 
 img {
-  width: 100%;
   object-fit: cover;
 }
 
