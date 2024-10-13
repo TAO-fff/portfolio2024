@@ -15,6 +15,7 @@ li {
 :root {
   --color: #333;
   --color-inverse: #f6faf5;
+  --accent-color: #a3d8e5;
   --header-height: 3.75rem;
   --breackpoint-md: 768px;
   --gap: 0.75rem;
@@ -258,7 +259,7 @@ body {
   gap: 8em;
   width: 100%;
   height: 100%;
-  background: #a3d8e5;
+  background: var(--accent-color);
 }
 
 .nav-menu li a {
@@ -351,7 +352,9 @@ body {
 ----------------------------------------------------*/
 .main-view {
   position: relative;
-  width: 100%;
+  top: 0;
+  left: 0;
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
@@ -366,8 +369,8 @@ picture {
 }
 
 img {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
 }
 
@@ -690,7 +693,7 @@ img {
 
 .close-btn {
   color: var(--color-inverse);
-  background-color: #a3d8e5;
+  background-color: var(--accent-color);
   border: 1px solid var(--color-inverse);
   border-radius: 5rem;
   width: 5vmin;
@@ -735,7 +738,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  background: #a3d8e5;
+  background: var(--accent-color);
   transform: translateY(calc(100% - 50%));
   z-index: 1;
 }
