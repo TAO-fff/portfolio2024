@@ -3,12 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Akemi Tokoyoda Portfolio</title>
+    <meta name="description" content="自主制作デザインのポートフォリオ" />
+    <meta content="Akemi tokoyoda portfolio" property="og:title" />
+    <meta
+      content="コーディングとデザインが趣味なWebサイトデベロッパーのポートフォリオ"
+      property="og:description"
+    />
 
+    <!-- css -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div class="layout-wrap">
+    <!-- nav hamメニュー -->
+    <div class="nav-wrapper">
+      <button
+        id="toggle"
+        class="hamburger"
+        type="button"
+        aria-label="メニューを開く"
+        aria-controls="nav"
+        aria-expanded="false"
+      >
+        <span class="hamburgerLine"></span>
+      </button>
+      <nav id="nav" class="nav" aria-hidden="true">
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="./index.html">Top</a></li>
+          <li><a href="">Profile</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- top img -->
+    <main id="main" class="works-main">
+      <div class="works-img-wrapper">
+        <picture>
+          <source
+            srcset="./img/sp-works@2x-100.jpg"
+            media="(max-width: 767px)"
+          />
+          <source srcset="./img/tab-works-100.jpg" media="(max-width: 1024px)" />
+          <img
+            src="./img/works-top-100.jpg"
+            alt="Akemi Tokoyodポートフォリオ"
+          />
+        </picture>
+      </div>
+
+      <div class="ttl-container">
+        <section class="works">
+          <div class="section-ttl-beside mont">
+            <p>About My</p>
+          </div>
+          <div class="section-ttl-vertical mont">
+            <p>Development</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- scroll -->
+      <div class="scroll-container">
+        <div class="scroll-wrapper">
+          <p class="scroll-txt mont"><span></span>Scroll</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- side title -->
+    <div class="side-ttl-container works-side-ttl">
+      <div class="side-ttl-wrapper">
+        <p class="side-ttl-txt mont"><span></span>Works</p>
+      </div>
+    </div>
+
     <!-- picture -->
     <section class="works">
       <div class="works-photos">
@@ -94,45 +172,120 @@
       </div>
     </section>
 
-    <div class="skill-main">
-      <section class="creative-cards style-one">
-        <div class="container">
-          <div class="row">
-            <div class="card-column">
-              <div class="card-details">
-                <div class="card-icons">
-                  <img class="light-icon" src="https://imgpanda.com/upload/ib/1yIWjyG41o.png" alt="icon" />
-                </div>
-                <h3><a href="https://www.fiverr.com/aliali44">Core Planning</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectne auctor aliquet. Aenean sollicitudi bibendum auctor.</p>
-                <a class="read-more-btn" href="https://www.fiverr.com/aliali44"><i class="fa-solid fa-angles-right"></i></a>
-              </div>
-            </div>
-            <div class="card-column">
-              <div class="card-details">
-                <div class="card-icons">
-                  <img class="light-icon" src="https://imgpanda.com/upload/ib/Q4tSh2ctkH.png" alt="icon" />
-                </div>
-                <h3><a href="https://www.fiverr.com/aliali44">Traditional Designs</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectne auctor aliquet. Aenean sollicitudi bibendum auctor.</p>
-                <a class="read-more-btn" href="https://www.fiverr.com/aliali44"><i class="fa-solid fa-angles-right"></i></a>
-              </div>
-            </div>
-            <div class="card-column">
-              <div class="card-details">
-                <div class="card-icons">
-                  <img class="light-icon" src="https://imgpanda.com/upload/ib/YQdOwN6IDJ.png" alt="icon" />
-                </div>
-                <h3><a href="https://www.fiverr.com/aliali44">Quality Materials</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectne auctor aliquet. Aenean sollicitudi bibendum auctor.</p>
-                <a class="read-more-btn" href="https://www.fiverr.com/aliali44"><i class="fa-solid fa-angles-right"></i></a>
-              </div>
-            </div>
-          </div>
-          </div>
-        
-        </section>
+    <!-- skills -->
+     <section class="skills" id="skills">
+      
+      <div class="skills-wrap">
+       
+      <article class="skill-card">
+        <div class="card-wrap">
+          <div class="skill-img" id="card1">
+            <img src="./img/skill-design.svg" alt="デザインスキル">
+          <p class="skill-marquees-txt mont">I am capable of designing something like this.</p></div>
+        <div class="skill-card-txt-wrap" id="card1-txt">
+          <p class="card-ttl mont">Design</p>
+          <p class="card-txt">デザインの基礎を習得しています。
+            目的やご希望に合わせたデザインを考え、ワイヤーフレーム・デザインカンプを作成することが可能です。
+</p>
         </div>
+      </div>
+      </article>
+
+
+
+      
+      <article class="skill-card">
+        <div class="card-wrap">
+          <div class="skill-img" id="card2">
+            <img src="./img/skill-illustrator.svg" alt="">
+          </div>
+        <div class="skill-card-txt-wrap" id="card2-txt">
+          <p class="card-ttl mont">Illustrator</p>
+          <p class="card-txt">Illustratorでバナー広告制作を行います。また、文字を加工しデフォルトに無い文字や、装飾を作成する作業が可能です。
+</p>
+        </div>
+      </div>
+      </article>
+
+
+
+
+      <article class="skill-card">
+        <div class="card-wrap">
+          <div class="skill-img" id="card3">
+            <img src="./img/skill-Photoshop.svg" alt="">
+          </div>
+        <div class="skill-card-txt-wrap" id="card3-txt">
+          <p class="card-ttl mont">Photoshop</p>
+          <p class="card-txt">デザインの基礎を習得しています。
+            Photoshopを駆使して写真の色補正や、複数枚の画像を組み合わせた合成加工まで行います。また人物や小物などの切り抜き作業が可能です。
+</p>
+        </div>
+      </div>
+      </article>
+
+      <article class="skill-card">
+        <div class="card-wrap">
+          <div class="skill-img" id="card4">
+            <img src="./img/skill-HTML_CSS.svg" alt="">
+          </div>
+        <div class="skill-card-txt-wrap" id="card4-txt">
+          <p class="card-ttl mont">HTML / CSS</p>
+          <p class="card-txt">Webサイトを一から構築するための、HTML・CSSコーディングが可能です。メインで使用しているエディタはVisual
+            Studio Codeです。
+</p>
+        </div>
+      </div>
+      </article>
+
+      <article class="skill-card">
+        <div class="card-wrap">
+          <div class="skill-img" id="card5">
+            <img src="./img/skill-jQuery.svg" alt="">
+          </div>
+        <div class="skill-card-txt-wrap" id="card5-txt">
+          <p class="card-ttl mont">jQuery</p>
+          <p class="card-txt">スライダー・ハンバーガーメニュー・モーダルウィンドウなど、webサイトに簡単な動きをつけるための、jQueryカスタマイズが可能です。
+</p>
+        </div>
+      </div>
+      </article>
+
+      <article class="skill-card">
+        <div class="card-wrap">
+          <div class="skill-img" id="card6">
+            <img src="./img/skill-respons.svg" alt="">
+          </div>
+        <div class="skill-card-txt-wrap" id="card6-txt">
+          <p class="card-ttl ">レスポンシブ対応</p>
+          <p class="card-txt">
+            パソコン、タブレット、携帯など各デバイスの画面サイズに応じて、デザインの作成をすることや、コーディングが可能です。
+</p>
+        </div>
+      </div>
+      </article>
+
+  </div>
+
+     </section>
+  
+    <!-- nav svg -->
+    <svg
+      class="overlay"
+      width="100%"
+      height="100%"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <path
+        id="overlayPath"
+        class="overlayPath"
+        vector-effect="non-scaling-stroke"
+        d="M 0 100 V 100 Q 50 100 100 100 V 100 z"
+        fill="#f6faf5"
+      />
+    </svg>
+
     <!-- GSAP CDN -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
@@ -145,6 +298,8 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/PixiPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
 
-    <script src="./js/card.js"></script>
+    <!-- js -->
+    <script src="./js/common.js"></script>
+    <script src="./js/works.js"></script>
   </body>
 </html>
