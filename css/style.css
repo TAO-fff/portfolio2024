@@ -770,6 +770,7 @@ picture {
 
 .footer-ttl {
   position: absolute;
+  transform: translateY(calc(100% - 115%));
   left: calc(100% - 90%);
 }
 
