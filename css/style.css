@@ -308,7 +308,7 @@ body {
 
 .section-ttl-vertical {
   position: absolute;
-  top: 19vmin;
+  top: calc((100% - 86%));
   right: calc(100% - 98%);
   writing-mode: vertical-lr;
 }
