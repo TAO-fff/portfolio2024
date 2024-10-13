@@ -357,7 +357,7 @@ body {
 }
 
 .mv-img-wrapper {
-
+overflow: hidden;
 }
 
 picture {
@@ -411,7 +411,7 @@ img {
 .ttl-content {
   display: block;
   content: "";
-  width: 11px;
+  width: 7px;
   height: 11vmin;
   background: var(--color);
   border-radius: 5rem;
@@ -420,7 +420,7 @@ img {
 .header-ttl-content {
   display: block;
   content: "";
-  width: 11px;
+  width: 7px;
   height: 11vmin;
   background: var(--color);
   border-radius: 5rem;
