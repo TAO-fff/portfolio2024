@@ -301,7 +301,7 @@ body {
 
 .section-ttl-beside {
   position: absolute;
-  top: 50px;
+  top: calc(100% - 93%);
   right: calc(100% - 98%);
 }
 
