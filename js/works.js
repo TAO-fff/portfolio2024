@@ -1,27 +1,33 @@
-// skills scroll trigger
-gsap.registerPlugin(ScrollTrigger); // プラグインの登録
+document.querySelectorAll('.skill-img').forEach((img) => {
+  img.addEventListener('click', function() {
+    const txtWrapId = this.id + '-txt';
+    const txtWrap = document.getElementById(txtWrapId);
 
-gsap.fromTo(".skills-block", 
-  { 
-    x: 500, // 初期位置を左外に設定
-    y: 500, // 初期位置を左外に設定
-    autoAlpha: 0 // 初期状態で透明
-  },
-  { 
-    x: 0, // 最終位置
-    y:0,
-    autoAlpha: 1, // フェードイン
-    stagger: {
-      each: 0.1
-    },
-    scrollTrigger: {
-      trigger: ".skills-trigger-block",
-      start: "top 90%", // アニメーション開始位置を画面の75%に設定
-      end: "bottom 40%", // アニメーション終了位置を画面の25%に設定
-      scrub: true, // スクロールに連動してアニメーションが進行
-      toggleActions: "play none none reverse",
-      markers: false
+    if (txtWrap) {
+      this.style.opacity = '0'; // skill-imgをフェードアウト
+      txtWrap.style.opacity = '1'; // skill-card-txt-wrapをフェードイン
+      txtWrap.classList.add('open-animation');
     }
-  }
-);
+  });
+});
 
+document.querySelectorAll('.skill-card-txt-wrap').forEach((txtWrap) => {
+  const closeButton = document.createElement('button');
+  closeButton.textContent = '×';
+  closeButton.classList.add('close-btn');
+  txtWrap.appendChild(closeButton);
+
+  closeButton.addEventListener('click', function() {
+    txtWrap.style.opacity = '0'; // skill-card-txt-wrapをフェードアウト
+    txtWrap.classList.remove('open-animation');
+
+    // 関連するskill-imgを再表示
+    const skillImgId = txtWrap.id.replace('-txt', ''); // '-txt'を削除してskill-imgのIDを取得
+    const skillImg = document.getElementById(skillImgId);
+    if (skillImg) {
+      setTimeout(() => {
+        skillImg.style.opacity = '1'; // skill-imgを再表示
+      }, 50); // 遅延時間を追加してアニメーション終了を待つ
+    }
+  });
+});
