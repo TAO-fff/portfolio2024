@@ -40,15 +40,15 @@
         <nav id="nav" class="nav" aria-hidden="true">
           <ul id="nav-menu" class="nav-menu">
             <li><a href="./index.html">Top</a></li>
-            <li><a href="">Profile</a></li>
+            <li><a href="./profile.html">Profile</a></li>
             <li><a href="">Contact</a></li>
           </ul>
         </nav>
       </div>
       <!-- top img -->
-      <main id="main" class="works-main">
+      <main id="works-main" class="works-main">
         <div class="works-img-wrapper">
-          <picture>
+          <picture class="section-top-img">
             <source
               srcset="./img/sp-works@2x-100.jpg"
               media="(max-width: 767px)"
@@ -276,31 +276,34 @@
 
       <!-- footer -->
       <section class="footer">
-        <div class="footer-wrap">
-          <!-- left -->
-          <div class="footer-left">
-            <!-- footer ttl -->
-            <!-- en -->
-            <div class="footer-ttl">
-              <span class="footer-ttl-content"></span>
-              <p class="footer-site-ttl-txt mont">
-                <a href="./index.html">
-                  <span>Akemi</span><span>Tokyoda</span><span>Portfolio</span>
-                </a>
-              </p>
+        <div class="footer-container">
+          <div class="footer-wrap">
+            <!-- left -->
+            <div class="footer-left">
+              <!-- footer ttl -->
+              <!-- en -->
+              <div class="footer-ttl">
+                <span class="footer-ttl-content"></span>
+                <p class="footer-site-ttl-txt mont">
+                  <a href="./index.html">
+                    <span>Akemi</span><span>Tokyoda</span><span>Portfolio</span>
+                  </a>
+                </p>
+              </div>
             </div>
-          </div>
-          <!-- right -->
-          <div class="footer-right">
+            <!-- right -->
+            <div class="footer-right">
               <div class="footer-nav">
                 <nav class="footer-nav-list mont">
                   <div class="footer-nav-item">
                     <a href="./index.html">Top</a>
                   </div>
-                  <div class="footer-nav-item"><a href="">Profile</a></div>
+                  <div class="footer-nav-item">
+                    <a href="./profile.html">Profile</a>
+                  </div>
                   <div class="footer-nav-item"><a href="">Contact</a></div>
                 </nav>
-                
+
                 <div class="copyright">
                   <p class="mont">&copy Akemi Tokoyoda<span></span>Portfolio</p>
                 </div>
@@ -308,32 +311,32 @@
             </div>
 
             <!-- center -->
-             <div class="footer-center">
+            <div class="footer-center">
               <div class="footer-center-img">
-                <img src="./img/footer-center.png" alt="">
+                <img src="./img/footer-center.png" alt="" />
               </div>
-             </div>
+            </div>
           </div>
+        </div>
       </section>
 
-    <!-- nav svg -->
-    <svg
-      class="overlay"
-      width="100%"
-      height="100%"
-      viewBox="0 0 100 100"
-      preserveAspectRatio="none"
-    >
-      <path
-        id="overlayPath"
-        class="overlayPath"
-        vector-effect="non-scaling-stroke"
-        d="M 0 100 V 100 Q 50 100 100 100 V 100 z"
-        fill="#f6faf5"
-      />
-    </svg>
-  </div>
-
+      <!-- nav svg -->
+      <svg
+        class="overlay"
+        width="100%"
+        height="100%"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+      >
+        <path
+          id="overlayPath"
+          class="overlayPath"
+          vector-effect="non-scaling-stroke"
+          d="M 0 100 V 100 Q 50 100 100 100 V 100 z"
+          fill="#f6faf5"
+        />
+      </svg>
+    </div>
 
     <!-- GSAP CDN -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
