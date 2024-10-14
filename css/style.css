@@ -1,6 +1,10 @@
-body {
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html,body {
   font-feature-settings: "palt";
   line-height: 1;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -10,6 +14,13 @@ a {
 
 li {
   list-style: none;
+}
+
+img {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 :root {
@@ -22,6 +33,7 @@ li {
   --padding-section: 6.75rem;
   --padding-page: 16.625rem;
   --title-en: "montserrat";
+  --shadow: 5px 5px 15px rgba(81, 81, 81, 0.45);
 }
 
 /*----------------------------------------------------
@@ -64,6 +76,16 @@ body {
 .mont {
   font-family: "Montserrat", serif;
 }
+
+.shadow {
+  box-shadow:
+  -7px -7px 20px 0px rgba(255, 255, 255, 0.6),
+  -4px -4px 5px 0px rgba(255, 255, 255, 0.6),
+  7px 7px 20px 0px rgba(81, 81, 81, 0.133),
+  4px 4px 5px 0px rgba(81, 81, 81, 0.067);
+  background-color: rgb(246, 250, 245, .1);
+}
+
 
 /*----------------------------------------------------
 	レスポンシブ
@@ -148,6 +170,18 @@ body {
   overflow-x: hidden;
 }
 
+.section-top-img {
+  width: 94%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section-top-img img {
+  width: 100% !important;
+  height: auto; /* 画像のアスペクト比を維持 */
+  object-fit: cover;
+}
 /*----------------------------------------------------
 	nav
 ----------------------------------------------------*/
@@ -318,7 +352,7 @@ svg.overlay {
 .section-ttl-vertical {
   position: absolute;
   top: calc((100% - 86%));
-  right: calc(100% - 98%);
+  right: calc(100% - 98.5%);
   writing-mode: vertical-lr;
 }
 
@@ -362,25 +396,16 @@ svg.overlay {
 	footer
 ----------------------------------------------------*/
 .footer {
-  
+  position: relative;
+  bottom: 0;
+  left: 0;
 }
 
-.footer-wrap::after {
-  display: block;
-  content: "";
-  width: 100vw;
-  height: calc(100% - 20%);
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: var(--accent-color);
-  transform: translateY(calc(100% - 50%));
-  z-index: 1;
+.footer-container {
+  position: relative;
 }
 
 .footer-wrap {
-  position: relative;
-  margin-top: calc(100% - 70%);
 }
 
 
@@ -408,19 +433,12 @@ svg.overlay {
   display: block;
 }
 
-.footer-ttl-content {
-  display: block;
-  content: "";
-  width: 11px;
-  height: 11vmin;
-  background: var(--color);
-  border-radius: 5rem;
-}
+
 
 .footer-ttl-content {
   display: block;
   content: "";
-  width: 11px;
+  width: 6px;
   height: 11vmin;
   background: var(--color);
   border-radius: 5rem;
@@ -608,12 +626,12 @@ picture {
 .side-ttl-wrapper {
   position: absolute;
   top: 4vmin;
-  left: calc(100% - 99%);
+  left: calc(100% - 97%);
 }
 
 .side-ttl-txt {
   font-weight: 700;
-  font-size: 5vmin;
+  font-size: 3.8vmin;
   writing-mode: vertical-lr;
 }
 
@@ -660,7 +678,7 @@ picture {
 
 .photo-item img {
   width: 100%;
-  box-shadow: 5px 5px 15px rgba(81, 81, 81, 0.45);
+  box-shadow:var(--shadow);
 }
 
 .works-btn-wrap {
@@ -674,7 +692,7 @@ picture {
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: calc(100% - 70%);
+  margin-top: calc(100% - 66%);
   margin-left: calc(100% - 60%);
   margin-right: calc(100% - 60%);
   border: none;
@@ -690,7 +708,6 @@ picture {
    7px 7px 20px 0px rgba(81, 81, 81, 0.133),
    4px 4px 5px 0px rgba(81, 81, 81, 0.067);
    background-color: rgb(246, 250, 245, .1);
-
 }
 
 .btn-txt {
@@ -698,7 +715,8 @@ picture {
   font-weight: 200;
   text-align: center;
   color: var(--color);
-  padding: 10px 20px;
+  padding: 10px 15px;
+  margin: 0 auto;
 }
 
 #photo5 {
@@ -748,6 +766,7 @@ picture {
   justify-content: start;
   align-items: center;
   justify-items: end;
+  margin-top: 50px;
 }
 
 .skill-card {
@@ -777,7 +796,7 @@ picture {
 .skill-img {
   width: 100%;
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
@@ -873,52 +892,128 @@ picture {
 }
 
 /*----------------------------------------------------
-	prof
+  prof
 ----------------------------------------------------*/
 .profile {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: calc(100% - 75%);
+  width: 100%;
+  /* height: 100vh;  親要素の高さを100vhからautoに変更 */
+  height: auto; 
+}
+
+#book {
+  position: relative;
+  width: 94%;
+  height: auto; /* 自動調整 */
+  cursor: pointer;
 }
 
 .profile-wrap {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 50px 20px;
+  padding: 10% 20px;
+  box-shadow: 7px 7px 20px rgba(81, 81, 81, 0.133), 
+              -4px -4px 5px rgba(255, 255, 255, 0.6),
+              7px 7px 20px rgba(81, 81, 81, 0.133),
+              4px 4px 5px rgba(81, 81, 81, 0.067);
+  background-color: rgba(246, 250, 245, 0.1);
+  position: absolute;
+  width: 100%;
+  height: 100%; /* 各ページの高さを100%に */
+  top: 0;
+  left: 0;
+  opacity: 0; /* 初期状態で非表示 */
+  backface-visibility: hidden;
+  transform-origin: left center; /* 左側を基準に回転 */
+  transition: transform 1s ease, opacity 1s ease;
 }
 
+.profile-right,
 .profile-left {
-  width: 40%;
-}
-
-.profile-left img {}
-
-.profile-right {
-  width: 40%;
+  width: 45%;
 }
 
 .prof-txt {
   font-size: 2vmin;
-  line-height: 1.6;
+  line-height: 1.65;
+  padding: 10px;
 }
 
 .prof-txt span {
   display: block;
 }
 
-.prof-txt + .prof-txt {
-  margin-top: 15px;
+#prof1,
+#prof2,
+#prof3,
+#prof4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* 高さを設定 */
 }
+
+#prof1.active,
+#prof2.active,
+#prof3.active,
+#prof4.active {
+  opacity: 1;
+  z-index: 1; /* 現在のページを前面に表示 */
+  transform: rotateY(0); /* 表示するページは回転なし */
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#prof1.exiting,
+#prof2.exiting,
+#prof3.exiting,
+#prof4.exiting {
+  transform: rotateY(-90deg); /* 左軸で回転して非表示 */
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+
+
+
+
+
+
 
 
 /*----------------------------------------------------
 	favorite
 ----------------------------------------------------*/
-.favorite {}
+.favorite {
+  position: relative;
+  margin: calc(100% - 150%) auto calc(100% - 60%) auto;  z-index: -1;
+  padding-top: 50px;
+}
+
+#stack2 {
+  position: relative;
+  top: 60%;
+  left: 15%;
+  margin-top: calc(100% - 10%);
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .favorite-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 15px;
+  padding: 30px 0;
 }
 
 .favorite-left,
@@ -942,3 +1037,4 @@ picture {
 .favorite-txt + .favorite-txt {
   margin-top: 15px;
 }
+
