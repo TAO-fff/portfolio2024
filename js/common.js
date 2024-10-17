@@ -212,3 +212,51 @@ TOGGLE.addEventListener(clickTouchEvent, () => {
     menuOpen();
   }
 });
+
+/*----------------------------------------------------
+	mouse stalker
+----------------------------------------------------*/
+// ストーカーのサイズを取得
+const stalker = document.getElementById('mouse-stalker');
+let hovFlag = false;
+
+// ストーカーの通常時のサイズとhover時のサイズ
+const defaultSize = 20; // 通常時のサイズ
+const hoverSize = 80; // hover時のサイズ
+const offset = (hoverSize - defaultSize) / 2; // サイズ差のオフセット
+
+// ずらす量（ピクセル単位）
+const offsetX = 30; // 左にずらす量
+const offsetY = 30; // 上にずらす量
+
+// マウスの動きに合わせてマウスストーカーを移動
+document.addEventListener('mousemove', function (e) {
+    stalker.style.left = (e.clientX - (hovFlag ? offset : 0)) + 'px';  // hover時のオフセット
+    stalker.style.top = (e.clientY - (hovFlag ? offset : 0)) + 'px';   // hover時のオフセット
+});
+
+// aタグ hover
+const linkElem = document.querySelectorAll('a:not(.no_stick_)');
+linkElem.forEach(link => {
+    link.addEventListener('mouseover', function () {
+        hovFlag = true;
+        stalker.classList.add('is_active');
+    });
+    link.addEventListener('mouseout', function () {
+        hovFlag = false;
+        stalker.classList.remove('is_active');
+    });
+});
+
+// point-mouse-stalkerクラス hover
+const pointElems = document.getElementsByClassName('point-mouse-stalker');
+for (let i = 0; i < pointElems.length; i++) {
+    pointElems[i].addEventListener('mouseover', function() {
+        stalker.classList.add('point-mouse-stalker');
+        hovFlag = true; // hover状態に設定
+    });
+    pointElems[i].addEventListener('mouseout', function() {
+        stalker.classList.remove('point-mouse-stalker');
+        hovFlag = false; // hover状態を解除
+    });
+}
