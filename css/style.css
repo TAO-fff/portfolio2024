@@ -1222,9 +1222,9 @@ padding: 0 30px;
 
 .contact-form-input {
   width: 80%;
-  font-size: 1.17vw;
-  border: 1px solid #eeeeee;
-  background-color: #eeeeee;
+  font-size: 1.25vmin;
+  border: 1px solid var(--color-inverse);
+  background-color: var(--color-inverse);
   border-radius: 1em;
 }
 
@@ -1271,5 +1271,5 @@ textarea.contact-form-input {
 .contact-form-submit button:hover {
   opacity: 0.6;
   background-color: transparent;
-  color: #333;
+  color: var(--color);
 }
