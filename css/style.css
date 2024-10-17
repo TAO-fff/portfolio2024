@@ -357,7 +357,7 @@ svg.overlay {
 #mouse-stalker.point-mouse-stalker {
   width: 80px;
   height: 80px;
-  background: rgba(255, 165, 164, 0.8); 
+  background: rgba(163, 216, 229, 0.8);
   animation: pump 3s ease-in-out infinite;
   transform-origin: center;
 }
@@ -368,7 +368,7 @@ svg.overlay {
   position: absolute;
   top: 25%;
   left: 20%;
-  color: var(--color-inverse);
+  color: var(--color);
   font-size: 15px;
   font-family: Montserrat;
 }
@@ -376,35 +376,35 @@ svg.overlay {
 @keyframes pump {
   0% {
     transform: scale(1);
-    background: rgba(255, 165, 164, 0.8); /* 最初の背景色 */
+    background: rgba(163, 216, 229, 0.8); /* 最初の背景色 */
   }
   15% {
     transform: scale(1.1);
-    background: rgba(255, 165, 164, 0.8);
+    background: rgba(163, 216, 229, 0.8);
   }
   30% {
     transform: scale(1);
-    background: rgba(255, 165, 164, 0.8); /* 元の背景色に戻る */
+    background: rgba(163, 216, 229, 0.8); /* 元の背景色に戻る */
   }
   45% {
     transform: scale(1.1);
-    background: rgba(255, 165, 164, 0.8);
+    background: rgba(163, 216, 229, 0.8);
   }
   60% {
     transform: scale(1);
-    background: rgba(255, 165, 164, 0.8);
+    background: rgba(163, 216, 229, 0.8);
   }
   75% {
     transform: scale(1.1);
-    background: rgba(255, 165, 164, 0.8);
+    background: rgba(163, 216, 229, 0.8);
   }
   90% {
     transform: scale(1);
-    background: rgba(255, 165, 164, 0.8);
+    background: rgba(163, 216, 229, 0.8);
   }
   100% {
     transform: scale(1.1);
-    background: rgba(255, 165, 164, 0.8); /* 最終的に元の背景色に戻る */
+    background: rgba(163, 216, 229, 0.8); /* 最終的に元の背景色に戻る */
   }
 }
 
@@ -643,7 +643,7 @@ picture {
 
 .mv-site-ttl {
   position: absolute;
-  bottom: 10%; /* 元々calc(100% - 94%)だったのを調整 */
+  bottom: 5%; /* 元々calc(100% - 94%)だったのを調整 */
   right: 2%;
   padding: 10px;
   z-index: 3;
