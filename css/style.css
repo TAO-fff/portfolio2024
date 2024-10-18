@@ -1248,12 +1248,16 @@ picture {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  gap: 60px;
+  align-items: center;
+  gap: 50px;
 }
 
-.profile-right,
-.profile-left  {
+.profile-right {
   width: 80%;
+}
+
+.profile-left {
+  width: 70%;
 }
 
 .prof-txt {
@@ -1292,10 +1296,28 @@ picture {
 .favorite-left,
 .favorite-right {
   width: 40%;
+  opacity: 0;
+  transform: translateX(-100px); /* 左から隠す */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
 .favorite-left img {
   width: 80%;
+}
+
+.favorite-right {
+  transform: translateX(100px); /* 右から隠す */
+}
+
+/* フェードイン用のクラス */
+.animate-left {
+  opacity: 1;
+  transform: translateX(0); /* 元の位置に戻る */
+}
+
+.animate-right {
+  opacity: 1;
+  transform: translateX(0); /* 元の位置に戻る */
 }
 
 .favorite-txt {
@@ -1317,6 +1339,7 @@ picture {
     left: 0%;
     width: 100%;
     gap: 20px;
+    overflow: hidden;
 }
 
 .favorite-txt {
