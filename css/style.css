@@ -804,7 +804,6 @@ picture {
   border: 6px solid var(--color-inverse);
   background-color: var(--color-inverse);
   box-shadow:var(--shadow);
-
 }
 
 .photo-item img {
@@ -895,6 +894,10 @@ picture {
     top: 65%;
     left: 25%;
     transform: translateX(0)
+    }
+
+    .photo-item {    
+      border: 2px solid var(--color-inverse);
     }
 
   .works-btn-wrap {
