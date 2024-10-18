@@ -1,3 +1,25 @@
+// works photoフェードイン
+document.addEventListener('DOMContentLoaded', function () {
+  const photosWrapper = document.querySelector('.work-photos-wrapper');
+  const photos = document.querySelectorAll('.photo-item');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        photos.forEach((photo, index) => {
+          photo.style.animation = `fadeInOnly 1s ease forwards`;
+          photo.style.animationDelay = `${index * 0.7}s`; // 各画像の遅延
+        });
+        observer.unobserve(photosWrapper); // 一度アニメーションがトリガーされたら監視を停止
+      }
+    });
+  }, { threshold: 0.5 }); // 50%見えた時にトリガー
+
+  observer.observe(photosWrapper);
+});
+
+
+// Skillsテキスト表示
 document.querySelectorAll('.skill-img').forEach((img) => {
   img.addEventListener('click', function() {
     const txtWrapId = this.id + '-txt';
