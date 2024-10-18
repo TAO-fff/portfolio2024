@@ -1200,7 +1200,8 @@ picture {
   gap: 60px;
 }
 
-.profile-right {
+.profile-right,
+.profile-left  {
   width: 80%;
 }
 
