@@ -1098,6 +1098,11 @@ picture {
   font-size: 18px;
   font-weight: 400;
 }
+
+.close-btn {
+  width: 15vmin;
+    height: 9vmin;
+}
 }
 
 /*----------------------------------------------------
