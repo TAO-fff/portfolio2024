@@ -618,6 +618,33 @@ svg.overlay {
   width: 70%;
 }
 
+@media screen and (max-width:767px) {
+  /* right */
+  .footer-nav {
+    padding-right: 18px;
+  }
+
+  .footer-nav-list {
+    font-size: 18px;
+}
+
+.copyright {
+  top: calc(0% - 25%);
+  right: calc(100% - 136%);
+}
+
+  .copyright p {
+    font-size: 10px;
+  }
+  
+  /* center */
+  .footer-center-img img {
+    width: 50%;
+  }
+  
+  
+}
+
 /*＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
 end common
 ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊*/
