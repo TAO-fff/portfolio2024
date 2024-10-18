@@ -260,3 +260,9 @@ for (let i = 0; i < pointElems.length; i++) {
         hovFlag = false; // hover状態を解除
     });
 }
+
+// マウスのクリック時にhovFlagを確認してリセット
+document.addEventListener('click', function () {
+    hovFlag = false;
+    stalker.classList.remove('is_active');
+});
