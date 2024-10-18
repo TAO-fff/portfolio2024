@@ -1561,20 +1561,24 @@ textarea.contact-form-input {
 @media screen and (max-width: 767px) {
   .article-wrap {
     display: flex;
-    padding: 0 0 25vmin 0;
+    padding: 0 0 45vmin 0;
     flex-direction: column;
     align-items: center;
-    gap: 25vmin
+    gap: 45vmin
 }
 
 .gallery-block {
   width: calc(57% - 4.6%);
-  height: 25vmin;
+  height: 45vmin;
   margin: 0;
 }
 
 .item-content h6,
 .item-content .tool {
   font-size: 16px;
+}
+
+.item-content {
+  top: 45vmin;
 }
 }
