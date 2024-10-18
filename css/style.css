@@ -890,8 +890,12 @@ picture {
   }
 
   .photos-img-box ul {
-    width: 90%;
-  }
+    width: 75%;
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    transform: translateX(0)
+    }
 
   .works-btn-wrap {
     position: relative;
