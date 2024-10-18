@@ -883,10 +883,30 @@ picture {
   transform: rotate(-2.5deg) translate(calc(100% - 114%), -40px);
 }
 
+/***** sp photo *****/
+@media screen and (max-width: 767px) {
+  .works-side-ttl {
+    margin-top: 20%;
+  }
+
+  .photos-img-box ul {
+    width: 90%;
+  }
+
+  .works-btn-wrap {
+    position: relative;
+    top: 80px;
+    left: 0;
+}
+
+.btn-txt {
+  font-size: 18px;
+  font-weight: 400;
+}
+}
 
 
-
-/* gallery */
+/* photo back */
 .works-slider-container {
   width: 100%;
   position: relative;
@@ -1038,6 +1058,29 @@ picture {
   }
 }
 
+
+/***** sp skills *****/
+@media screen and (max-width: 767px) {
+  .skills-wrap {
+    display: flex;
+    margin: calc(100% - 70%) 0;
+    flex-direction: column;
+}
+
+.skill-card {
+  width: 80%;
+}
+
+.card-ttl {
+  font-size: 35px;
+}
+
+.card-txt {
+  font-size: 18px;
+  font-weight: 400;
+}
+}
+
 /*----------------------------------------------------
   prof
 ----------------------------------------------------*/
@@ -1144,6 +1187,28 @@ picture {
   transform: translateY(0); /* 元の位置に戻る */
 }
 
+/***** sp prof *****/
+@media screen and (max-width: 767px) {
+  #book {
+    width: 97%;
+}
+
+.profile-wrap {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.profile-right {
+  width: 80%;
+}
+
+.prof-txt {
+  font-size: 16px;
+}
+}
+
 /*----------------------------------------------------
 	favorite
 ----------------------------------------------------*/
@@ -1194,12 +1259,26 @@ picture {
   margin-top: 15px;
 }
 
+/***** sp favorite *****/
+@media screen and (max-width: 767px) {
+  #stack2 {
+    left: 0%;
+    width: 100%;
+    gap: 20px;
+}
+
+.favorite-txt {
+  font-size: 16px;
+}
+}
+
 /*----------------------------------------------------
 	contact
 ----------------------------------------------------*/
 .contact {
 margin: 0 auto;
 padding: 0 30px;
+width: 70%;
 }
 
 .contact-container{
@@ -1294,14 +1373,13 @@ textarea.contact-form-input {
 }
 
 .contact-form-submit button {
-  font-family: Zen Kaku Gothic New;
-  font-size: 1.3vw;
+  font-size: 2vmin;
   font-weight: 500;
   color: #fff;
   background-color: var(--accent-color);
   border: 1px solid var(--accent-color);
   border-radius: 2vw;
-  padding: 0.5vw 3vw;
+  padding: 2vmin 8vmin;
   transition: 0.4s;
   cursor: pointer;
 }
@@ -1310,6 +1388,36 @@ textarea.contact-form-input {
   opacity: 0.6;
   background-color: transparent;
   color: var(--color);
+}
+
+/***** sp contact *****/
+@media screen and (max-width: 767px) {
+  .contact {
+    width: 85%;
+}
+
+.contact-wrap {
+  align-items: center;
+}
+
+.contact-txt p,
+.contact-form-label {
+  font-size: 16px;
+}
+
+.contact-form-input {
+  width: 90%;
+  font-size: 16px;
+  padding: 10px 15px;
+}
+
+.contact-form-submit button {
+  font-size: 16px;
+  border-radius: 2vw;
+  padding: 15px 80px;
+  transition: 0.4s;
+  cursor: pointer;
+}
 }
 
 
@@ -1442,4 +1550,26 @@ textarea.contact-form-input {
   transform: translateZ(70px);
   padding: 10px 0;
   font-size: 2vmin;
+}
+
+/***** sp gallery *****/
+@media screen and (max-width: 767px) {
+  .article-wrap {
+    display: flex;
+    padding: 0 0 25vmin 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 25vmin
+}
+
+.gallery-block {
+  width: calc(57% - 4.6%);
+  height: 25vmin;
+  margin: 0;
+}
+
+.item-content h6,
+.item-content .tool {
+  font-size: 16px;
+}
 }
