@@ -1065,6 +1065,10 @@ picture {
 
 /***** sp skills *****/
 @media screen and (max-width: 767px) {
+  .skills {
+    padding-top: 20%;
+}
+
   .skills-wrap {
     display: flex;
     margin: calc(100% - 70%) 0;
