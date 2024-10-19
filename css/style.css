@@ -627,6 +627,7 @@ svg.overlay {
   position: absolute;
   left: calc(100% - 59%);
   transform: translateY(calc(100% - -60%));
+  z-index: -1;
 }
 
 .footer-center-img img {
