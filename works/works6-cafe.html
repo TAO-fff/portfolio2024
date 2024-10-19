@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akemi Tokoyoda Portfolio</title>
+    <meta name="description" content="自主制作デザインのポートフォリオ" />
+    <meta content="Akemi tokoyoda portfolio" property="og:title" />
+    <meta
+      content="コーディングとデザインが趣味なWebサイトデベロッパーのポートフォリオ"
+      property="og:description"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- nav hamメニュー -->
+    <div class="nav-wrapper">
+      <button
+        id="toggle"
+        class="hamburger point-mouse-stalker"
+        type="button"
+        aria-label="メニューを開く"
+        aria-controls="nav"
+        aria-expanded="false"
+      >
+        <span class="hamburgerLine"></span>
+      </button>
+      <nav id="nav" class="nav" aria-hidden="true">
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="/index.html">Top</a></li>
+          <li><a href="/works.html">Works</a></li>
+          <li><a href="/profile.html">Profile</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main id="main">
+      <!-- works slider -->
+      <section class="works-introduction">
+        <div class="introduction-slider-img">
+          <ul class="slider-list">
+            <li class="slider-item">
+              <img src="/img/slider-works6.jpg" alt="" />
+            </li>
+            <li class="slider-item">
+              <img src="/img/slider-works6-1.jpg" alt="" />
+            </li>
+            <li class="slider-item">
+              <img src="/img/slider-works6-2.jpg" alt="" />
+            </li>
+            <li class="slider-item">
+              <img src="/img/slider-works6-3.jpg" alt="" />
+            </li>
+          </ul>
+        </div>
+        <div class="introduction-slider-txt">
+          <div class="production-period">
+            <p class="period-ttl">制作期間</p>
+            <p class="period-txt">1.5週間</p>
+          </div>
+          <div class="tool">
+            <p class="period-ttl">使用ツール</p>
+            <p class="tool-txt mont">HTML・CSS / jQuery / レスポンシブ対応</p>
+          </div>
+          <div class="introduction-txt">
+            <p>デザインカンプを基にコーディングをしました。</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="ttl-container">
+      <div class="works-ttl-beside mont">
+        <p>Introduction</p>
+      </div>
+      <div class="works-ttl-vertical mont">
+        <p>to the work</p>
+      </div>
+    </div>
+
+    <!-- 全体画像 -->
+    <section class="works-big-picture">
+      <div class="big-picture-list">
+        <div class="big-picture-item">
+          <img src="/img/slider-works6-long1.jpg" alt="" />
+        </div>
+        <div class="big-picture-item">
+          <img src="/img/slider-works6-long2.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+      <div class="footer-container">
+        <div class="footer-wrap">
+          <!-- left -->
+          <div class="footer-left">
+            <!-- footer ttl -->
+            <!-- en -->
+            <div class="footer-ttl">
+              <span class="footer-ttl-content"></span>
+              <p class="footer-site-ttl-txt mont">
+                <a href="/index.html">
+                  <span>Akemi</span><span>Tokyoda</span><span>Portfolio</span>
+                </a>
+              </p>
+            </div>
+          </div>
+          <!-- right -->
+          <div class="footer-right">
+            <div class="footer-nav">
+              <nav class="footer-nav-list mont">
+                <div class="footer-nav-item">
+                  <a href="/works.html">Works</a>
+                </div>
+                <div class="footer-nav-item">
+                  <a href="/profile.html">Profile</a>
+                </div>
+                <div class="footer-nav-item">
+                  <a href="/contact.html">Contact</a>
+                </div>
+              </nav>
+
+              <div class="copyright">
+                <p class="mont">&copy Akemi Tokoyoda<span></span>Portfolio</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- center -->
+          <div class="footer-center">
+            <div class="footer-center-img">
+              <img src="/img/footer-center.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- nav svg -->
+    <svg
+      class="overlay"
+      width="100%"
+      height="100%"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <path
+        id="overlayPath"
+        class="overlayPath"
+        vector-effect="non-scaling-stroke"
+        d="M 0 100 V 100 Q 50 100 100 100 V 100 z"
+        fill="#f6faf5"
+      />
+    </svg>
+
+    <!-- mouse stalker -->
+    <div id="mouse-stalker"></div>
+
+    <!-- GSAP CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Observer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/EaselPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/PixiPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+
+    <!-- js -->
+    <script src="/js/common.js"></script>
+    <script src="/js/introduction.js"></script>
+  </body>
+</html>
