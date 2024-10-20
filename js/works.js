@@ -20,36 +20,33 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // Skillsテキスト表示
-document.querySelectorAll('.skill-img').forEach((img) => {
-  img.addEventListener('click', function() {
-    const txtWrapId = this.id + '-txt';
-    const txtWrap = document.getElementById(txtWrapId);
+// IntersectionObserver を使って .skill-img が80%見えたらテキストを表示
+const observerOptions = {
+  root: null, // ビューポートを基準
+  rootMargin: '0px',
+  threshold: 0.8 // 80%見えたら発火
+};
 
-    if (txtWrap) {
-      this.style.opacity = '0'; // skill-imgをフェードアウト
-      txtWrap.style.opacity = '1'; // skill-card-txt-wrapをフェードイン
-      txtWrap.classList.add('open-animation');
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const img = entry.target;
+      const txtWrapId = img.id + '-txt';
+      const txtWrap = document.getElementById(txtWrapId);
+
+      if (txtWrap) {
+        img.style.opacity = '0'; // skill-imgをフェードアウト
+        txtWrap.style.opacity = '1'; // skill-card-txt-wrapをフェードイン
+        txtWrap.classList.add('open-animation');
+      }
+      
+      // 一度発火したら監視を停止する
+      observer.unobserve(img);
     }
   });
-});
+}, observerOptions);
 
-document.querySelectorAll('.skill-card-txt-wrap').forEach((txtWrap) => {
-  const closeButton = document.createElement('button');
-  closeButton.textContent = '×';
-  closeButton.classList.add('close-btn');
-  txtWrap.appendChild(closeButton);
-
-  closeButton.addEventListener('click', function() {
-    txtWrap.style.opacity = '0'; // skill-card-txt-wrapをフェードアウト
-    txtWrap.classList.remove('open-animation');
-
-    // 関連するskill-imgを再表示
-    const skillImgId = txtWrap.id.replace('-txt', ''); // '-txt'を削除してskill-imgのIDを取得
-    const skillImg = document.getElementById(skillImgId);
-    if (skillImg) {
-      setTimeout(() => {
-        skillImg.style.opacity = '1'; // skill-imgを再表示
-      }, 50); // 遅延時間を追加してアニメーション終了を待つ
-    }
-  });
+// すべての .skill-img を監視対象に追加
+document.querySelectorAll('.skill-img').forEach(img => {
+  observer.observe(img);
 });
