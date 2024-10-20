@@ -996,7 +996,7 @@ picture {
 .skill-card {
   width: 90%;
   max-width: 550px;
-  margin: 25px 0px;
+  margin: 50px 0px;
 }
 
 .card-wrap::before {
@@ -1018,7 +1018,7 @@ picture {
 }
 
 .skill-img {
-  width: 100%;
+  width: 50%;
   position: absolute;
   top: 20%;
   left: 50%;
