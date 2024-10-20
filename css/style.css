@@ -415,6 +415,10 @@ svg.overlay {
   #mouse-stalker {
     display: none;
   }
+
+  #mouse-stalker.point-mouse-stalker::before {
+    content: "TAP";
+  }
 }
 
 /*----------------------------------------------------
@@ -983,13 +987,14 @@ picture {
   grid-template-columns: 1fr 1fr;
   place-items: center;
   justify-content: start;
-  align-items: center;
-  justify-items: end;
-  margin-top: calc(100% - 85%);
+  align-items: start;
+  justify-items: center;
+  margin: calc(100% - 85%) auto;
+  padding: 30px;
 }
 
 .skill-card {
-  width: 85%;
+  width: 90%;
   max-width: 550px;
   margin: 25px 0px;
 }
@@ -1031,6 +1036,7 @@ picture {
   position: relative;
   background-color: transparent;
   opacity: 0;
+  width: 100%;
 }
 
 .card-wrap::before {
@@ -1080,19 +1086,6 @@ picture {
   visibility: visible;
 }
 
-.close-btn {
-  color: var(--color-inverse);
-  background-color: var(--accent-color);
-  border: 1px solid var(--color-inverse);
-  border-radius: 5rem;
-  width: 5vmin;
-  height: 3vmin;
-}
-
-.skill-img:hover,
-.close-btn:hover {
-  cursor: pointer;
-}
 
 @keyframes anime-txt {
   0% {
@@ -1118,6 +1111,7 @@ picture {
     display: flex;
     margin: calc(100% - 70%) 0;
     flex-direction: column;
+    align-items: center;
   }
 
   .skill-card {
@@ -1698,6 +1692,7 @@ textarea.contact-form-input {
 .works-introduction {
   width: 80%;
   margin: 20vmin auto;
+  padding-top: 30px;
 }
 
 .introduction-slider-img {
