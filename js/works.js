@@ -20,11 +20,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // Skillsテキスト表示
-// IntersectionObserver を使って .skill-img が80%見えたらテキストを表示
+// IntersectionObserver を使って .skill-img が100%見えたら発火し、0.8秒遅延してテキストを表示
 const observerOptions = {
   root: null, // ビューポートを基準
   rootMargin: '0px',
-  threshold: 0.8 // 80%見えたら発火
+  threshold: 1.0 // 100%見えたら発火
 };
 
 const observer = new IntersectionObserver((entries, observer) => {
@@ -34,14 +34,17 @@ const observer = new IntersectionObserver((entries, observer) => {
       const txtWrapId = img.id + '-txt';
       const txtWrap = document.getElementById(txtWrapId);
 
-      if (txtWrap) {
-        img.style.opacity = '0'; // skill-imgをフェードアウト
-        txtWrap.style.opacity = '1'; // skill-card-txt-wrapをフェードイン
-        txtWrap.classList.add('open-animation');
-      }
-      
-      // 一度発火したら監視を停止する
-      observer.unobserve(img);
+      // 0.8秒遅延してアニメーションを開始
+      setTimeout(() => {
+        if (txtWrap) {
+          img.style.opacity = '0'; // skill-imgをフェードアウト
+          txtWrap.style.opacity = '1'; // skill-card-txt-wrapをフェードイン
+          txtWrap.classList.add('open-animation');
+        }
+        
+        // 一度発火したら監視を停止する
+        observer.unobserve(img);
+      },500); // 300ミリ秒（0.8秒）の遅延
     }
   });
 }, observerOptions);
