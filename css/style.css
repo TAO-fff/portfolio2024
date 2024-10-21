@@ -880,7 +880,22 @@ picture {
   transition: 0.3s ease;
   border-radius: 0.5rem;
   background-color: rgb(246, 250, 245, 0.3);
+  color: var(--color);
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background-color: var(--color-inverse);
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
 }
+
+button:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
 
 .works-btn:hover {
   box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.6),
@@ -961,7 +976,6 @@ picture {
     width: 50%;
     margin-left: calc(100% - 75%);
     margin-right: calc(100% - 75%);
-    border: 1px solid var(--color);
   }
 
   .btn-txt {
