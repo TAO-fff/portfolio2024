@@ -44,7 +44,7 @@ const observer = new IntersectionObserver((entries, observer) => {
         
         // 一度発火したら監視を停止する
         observer.unobserve(img);
-      },500); // 300ミリ秒（0.8秒）の遅延
+      },750); // 300ミリ秒（0.8秒）の遅延
     }
   });
 }, observerOptions);
