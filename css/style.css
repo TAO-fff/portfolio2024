@@ -411,13 +411,16 @@ svg.overlay {
   }
 }
 
+@media screen and (max-width: 1100px) and (min-width: 767px) {
+#mouse-stalker.point-mouse-stalker::before {
+  content: "TAP";
+}
+}
+
+
 @media screen and (max-width: 767px) {
   #mouse-stalker {
     display: none;
-  }
-
-  #mouse-stalker.point-mouse-stalker::before {
-    content: "TAP";
   }
 }
 
@@ -523,6 +526,12 @@ svg.overlay {
     height: 0;
     top: 50px;
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .scroll-txt {
+    font-size: 12px;
   }
 }
 
