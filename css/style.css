@@ -877,23 +877,18 @@ picture {
   margin-left: calc(100% - 70%);
   margin-right: calc(100% - 70%);
   border: none;
-  transition: 0.3s ease;
   border-radius: 0.5rem;
   background-color: rgb(246, 250, 245, 0.3);
   color: var(--color);
   padding: 0.7em 1.7em;
   font-size: 18px;
   border-radius: 0.5em;
-  background-color: var(--color-inverse);
+  background-color: rgba(246, 250, 245, 0.741);
   cursor: pointer;
   border: 1px solid #e8e8e8;
   transition: all 0.3s;
   box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
-}
-
-button:active {
-  color: #666;
-  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+  transition: 5.8s ease-in-out;
 }
 
 
@@ -902,7 +897,9 @@ button:active {
     -4px -4px 5px 0px rgba(255, 255, 255, 0.6),
     7px 7px 20px 0px rgba(81, 81, 81, 0.133),
     4px 4px 5px 0px rgba(81, 81, 81, 0.067);
-  background-color: rgb(246, 250, 245, 0.1);
+    background-color: rgb(246, 250, 245, 0.1);
+    color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
 }
 
 .btn-txt {
