@@ -4,7 +4,7 @@
 
 const CONTENTS = {
     MAIN: document.getElementById("main"),
-    FOOTER: document.getElementById("nav-footer")
+    FOOTER: document.getElementById("footer")
   };
   const NAV = document.getElementById("nav");
   const MENU = document.getElementById("nav-menu");
@@ -41,7 +41,7 @@ const CONTENTS = {
     .set(OVERLAYPATH, {
       attr: { d: "M 0 0 V 0 Q 50 0 100 0 V 0 z" }
     })
-    // 扇型を黒く塗りつぶして反転させたパス
+    // 扇型を白く塗りつぶして反転させたパス
     .to(
       OVERLAYPATH,
       {
@@ -51,7 +51,7 @@ const CONTENTS = {
       },
       0
     )
-    // 真っ黒なパス
+    // 白パス
     .to(OVERLAYPATH, {
       attr: { d: "M 0 0 V 100 Q 50 100 100 100 V 0 z" },
       ease: "power2",
@@ -69,12 +69,12 @@ const CONTENTS = {
       0.1
     )
     // 後にアニメーションするパス
-    // 真っ黒なパス
+    // 白パス
     .set(OVERLAYPATH, {
       attr: { d: "M 0 100 V 0 Q 50 0 100 0 V 100 z" }
     })
 
-    // 扇型の余白部分を黒く塗りつぶして反転させたパス
+    // 扇型の余白部分を白く塗りつぶして反転させたパス
     .to(OVERLAYPATH, {
       attr: { d: "M 0 100 V 50 Q 50 100 100 50 V 100 z" },
       duration: 0.3,
@@ -135,7 +135,7 @@ function menuClose() {
       },
       0
     )
-    // 真っ黒なパス
+    // 白パス
     .to(OVERLAYPATH, {
       duration: 0.3,
       ease: "power2",
@@ -158,7 +158,7 @@ function menuClose() {
       0.1
     )
     // 後にアニメーションするパス
-    // 真っ黒なパス
+    // 白パス
     .set(OVERLAYPATH, {
       attr: { d: "M 0 0 V 100 Q 50 100 100 100 V 0 z" }
     })
@@ -169,7 +169,7 @@ function menuClose() {
       },
       "<"
     )
-    // 扇型の余白部分を黒く塗りつぶしたパス
+    // 扇型の余白部分を白塗りつぶしたパス
     .to(OVERLAYPATH, {
       duration: 0.3,
       ease: "power2.in",
